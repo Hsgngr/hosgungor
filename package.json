@@ -29,6 +29,6 @@
     "gulp-wait": "0.0.2"
   },
   "dependencies": {
-    "lodash": "^4.17.19"
+    "lodash": "^4.17.21"
   }
 }
