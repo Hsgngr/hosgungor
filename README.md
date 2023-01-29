@@ -1,6 +1,5 @@
-# Ege Hosgungor's Portfolio 🔥
+# Ege Hosgungor's Portfolio 
 
-## A Github Repo for the Porfolio 🚀
-
-## [Direct to the Page](https://hsgngr.github.io/hosgungor/) 🔗
+The Github Repo of my Porfolio
+[continue with the portfolio](https://hsgngr.github.io/hosgungor/) 🔗
 
