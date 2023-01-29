@@ -7,5 +7,5 @@ This is the hub of my professional journey as a Data Scientist/Mechanical Engine
 ## License 📄
 This project is licensed under the GPL-3.0 License - see the [LICENSE](LICENSE) file for details
 
-Special thanks to [rammcodes](https://github.com/rammcodes/Dopefo)lio) for this portfolio template.
+Special thanks to [rammcodes](https://github.com/rammcodes/Dopefolio) for this portfolio template.
 
