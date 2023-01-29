@@ -1,343 +1,813 @@
-# Dev Portfolio
+# Dopefolio 🔥
 
-This repo contains an easy-to-customize personal dev portfolio template that was created with Sass and JavaScript. It is lightweight and fully responsive, as well as comes with the Bootstrap grid system and loaded with Font Awesome. The site is static and comes production ready if you just want to add your information and go. Alternatively, you can edit styles, colours, and scripts fairly easily. The site was built as modular as possible to make it easy to shift around styles and content.
+## A Blazing Fast Multipage Portfolio Template for Developers 🚀
 
-View the portfolio, [click here](https://hsgngr.github.io/hosgungor/).
+## [Demo Link](https://dopefolio.netlify.app) 🔗
 
-Looking for a blog template? Checkout [DevBlog](https://github.com/RyanFitzgerald/devblog).
+<div align="center">
+  <img src="https://i.postimg.cc/CxZXqhWM/ezgif-com-video-to-gif-1.gif" alt="Dopefolio Demo" width="100%" />
+  <br>
+</div>
+
+<br/>
+<br/>
+
+---
+
+<br/>
+
+## ( Update ): Project Achievement 🏆 
+
+**Dopefolio** has been listed as the **Hottest Frontend Tool of 2021** According to **CSS Tricks** 🥳. Thanks to all of you for supporting this project 🙌
+
+**[Link to the CSS tricks article on Dopefolio](https://css-tricks.com/hottest-front-end-tools-in-2021/#aa-58-dopefolio)**   
+
+<br/>
+
+----
+
+<br/>
+
+## Support
+
+I do need **support** from amazing people like you as I started posting on **[My Youtube channel](https://www.youtube.com/channel/UCIb8_J9lqtiWGMIOdQ5DVsg)** and want each one of you to checkout my latest Youtube Video which is regarding **Dopefolio** & subscribe to **[My Youtube channel](https://www.youtube.com/channel/UCIb8_J9lqtiWGMIOdQ5DVsg)**. Here's the video ⬇️
+
+<a href="https://www.youtube.com/watch?v=chUMwOSTezk">
+<div align="center">
+  <img src="https://i.postimg.cc/2yvpm3Qh/Open-source-portfolio-template-for-developers-dopefolio-thumbnail.png" alt="Dopefolio Demo" width="100%" />
+  <br>
+</div>
+</a>
+
+**Subscribing** to **[My Youtube channel](https://www.youtube.com/channel/UCIb8_J9lqtiWGMIOdQ5DVsg)** is the best way to support **Dopefolio** and the developer of **Dopefolio** and it will motivate me to bring more and more awesome content and projects for amazing people like you ❤️
+
+**Subscribing** to **[My Youtube channel](https://www.youtube.com/channel/UCIb8_J9lqtiWGMIOdQ5DVsg)** isn't going to change the world but it will change the world for me, so please do it 😇 and it will not cost you anything 😉
+
+<br/>
+
+---
+
+<br/>
 
 ## Features
 
-* Gulp ready (compiles Sass and minifies JS)
-* Sass ready with lots of commenting
-* Fully responsive
-* Comes with Bootstrap grid system
-* Easy colour changes can be done through simple variable edits
+- ### **Easy to Setup 💯** 
+- ### **Free to Use ( OpenSource ) 🥳** 
+- ### **No Additional Frameworks 🤘** 
+- ### **No Additional Libraries 🙌** 
+- ### **Multi Page 💎** 
+- ### **Fully Responsive 🚀** 
+- ### **Super Fast and Optimized for SEO ⚡** 
+- ### **Great Audits Score 🎖️** 
 
-## Contents
+<img src="https://i.ibb.co/1dD8Mky/Screenshot-from-2021-08-28-14-38-30.png" alt="Dopefolio Audits" width="100%" />
 
-- [Setup and Configuration](#setup-and-configuration)
-    - [Making Edits / Customizing the Template](#making-edits--customizing-the-template)
-    - [Using the Template As Is](#using-the-template-as-is)
-- [Customization and Editing](#customization-and-editing)
-    - [General](#general)
-    - [Images](#images)
-    - [Header Section](#header-section)
-    - [Lead Section](#lead-section)
-    - [About Section](#about-section)
-    - [Experience Section](#experience-section)
-    - [Education Section](#education-section)
-    - [Projects Section](#projects-section)
-    - [Skills Section](#skills-section)
-    - [Contact Section](#contact-section)
-    - [Footer Section](#footer-section)
-    - [Optional Sections](#optional-sections)
-- [Changelog](#changelog)
-- [License](#license)
+<br/>
+<br/>
 
-## Setup and Configuration
+## Test the template with different colors on the playground link 🚀
 
-The setup required can be broken into two types:
-1. If you want to make edits or customize the template
-2. If you just want to add your information as use as is
+## [Playground Link](https://dopefolio-playground.netlify.app) 🔗
 
-### Making Edits / Customizing the Template
+<div align="center">
+  <img src="https://i.postimg.cc/xjsqN9GG/ezgif-com-gif-maker-2.gif" alt="Dopefolio Playground" width="100%" />
+  <br>
+</div>
 
-To setup, simply fork the repo and run `npm install` in order to get all the Gulp dev dependencies. Next, run `Gulp watch` to compile the Sass and minify the JavaScript. Alternatively, if you don't have Gulp installed globally, you can run the npm script `npm run watch`. Any changes done to the JavaScript (js/scripts.js) or Sass (sass/styles.scss) will be autocompiled and ready to go.
+<br/>
 
-All scripts are within `js/scripts.js` and get minified to `js/scripts.min.js`. All styles are in `sass/styles.scss` and get compiled to `css/styles.css`. Both the minified scripts file and compiled CSS file are what is loaded on the page by default.
+----
 
-At this point, the page is ready to go and you can begin to add your own information and make any needed changes. The sections below  contains a quick breakdown of each of the default sections and how they work.
+<br/>
 
-### Using The Template As Is
+## Technologies used 🛠️
 
-If you wish to use the template as is (i.e. how it's seen in the demo), then all that's required is the `css`, `images`, `js`, `libs` folders and the `index.html` file. You would then add your content to `index.html` as needed and you're good to go!
+- **HTML** 🚀
+- **CSS** 🚀
+- **JavaScript** 🚀
+- **SASS** 🚀
 
-## Customization and Editing
+---
 
-### General
+<br/>
 
-In general, most styles on the page are based off the definitions of variables in the variable section of the style sheet:
+## How To Use 🔧
 
-```SCSS
-// Define base and accent colors
-$base-color: #3498db;
-$base-color-hover: darken($base-color, 10%);
+From your command line, first clone Dopefolio:
 
-// Define background colors
-$background: #fff;
-$background-alt: #f2f2f5;
+```bash
+# Clone this repository
+$ git clone https://github.com/rammcodes/dopefolio
 
-// Define border colors
-$border: #dcd9d9;
+# Go into the repository
+$ cd dopefolio
 
-// Define text colors
-$heading: #374054;
-$text: #74808a;
+# Remove current origin repository
+$ git remote remove origin
 ```
 
-If you wish to change the general colour scheme of the page for example, simply change the value of `$base-color`.
+<br/>
 
-There is also a number of default CSS classes that can be applied such as `.shadow`, `.shadow-large`, `.btn-rounded-white`, and various others. These can be found under the General Styles section in the style sheet.
+Then you can install the dependencies
 
-### Images
+Using NPM:
 
-By default, the template comes with a number of images, some of which can be kept and others which act simply as placeholders and should be switched. The template contains the following:
+```bash
+# Install dependencies
+$ npm install
 
-* Main background (images/lead-bg.jpg) - this is the main background image provided via [Unsplash](https://unsplash.com/). This can be kept or changed easily by replacing `images/lead-bg.jpg` with your new background (recommended size of at least 1920x1080).
-* Favicon (/favicon.ico) - this is the favicon used for the page. Similar to the main bg, this can kept or changed easily by replacing the `favicon.ico` with your new one.
-* Project image - these are the images associated with the projects under the project section. These are simply placeholders and should either be replaced or removed.
-
-### Header Section
-
-The header section can be found within the `<header>` tag and simply contains an unordered list of anchors to different sections of the page. If you add a new section and want to be able to quickly navigate to it from the top, simply add another list element with an anchor that has the href of the ID of the section. Conversely, if you remove a section, don't forget to remove the associated navigation element.
-
-If you wish to add a header link to an external page, simply add the class `no-scroll` to the anchor. For example:
-
-```HTML
-<li>
-    <a href="https://google.com" class="no-scroll">Google</a>
-</li>
+# Listen to changes in CSS Preprocessor files ( SASS files )
+$ npm run compile:scss
 ```
 
-If you wish to have a sticky (fixed) header, you simply need to add a class of `sticky` to the main header. For example, that would be accomplished as follows:
+Once you run `npm run compile:scss`, then open the `index.html` inside your favorite browser or using the live server extension.
 
-```HTML
-<header class="sticky">
-    <!-- Header content -->
+<br>
+
+---
+
+<br>
+
+## Template Instructions:
+
+## Step 1 - STYLES
+
+Make sure you have started the SASS to CSS compilation by running
+
+```bash
+$ npm run compile:scss
+```
+
+Change the color theme of the website.
+
+Go to `sass/abstracts/_variables.scss` and change the value of this sass variable called `$themeClrPrimary` to your preferred HEX color.
+
+```scss
+// Default value
+$themeClrPrimary: #0062b9;
+```
+
+**NOTE**: I highly recommend to checkout the [Dopefolio Playground Link](https://dopefolio-playground.netlify.app) to test the template with different colors and see which color do you like the most.
+
+<br/>
+
+---
+
+<br/>
+
+## Step 2 - Homepage
+
+Go to `/index.html` and fill your information, there are 6 sections:
+
+### Header of Homepage
+
+- On `.header__logo-img`, Add your own Image, Better if the background of the image is transparent so the background can match the theme color. To remove the background of your image, you can visit remove.bg where you can upload your image and it will remove the background of it.
+- On `.header__logo-sub`, Add your own Name.
+
+```html
+<!-- **** Header of Homepage **** -->
+<header class="header">
+  <div class="header__content">
+    <div class="header__logo-container">
+      <div class="header__logo-img-cont">
+        <img
+          src="./assets/png/john-doe.png"
+          alt="Ram Maheshwari Logo Image"
+          class="header__logo-img"
+        />
+      </div>
+      <span class="header__logo-sub">John Doe</span>
+    </div>
+    <div class="header__main">
+      <ul class="header__links">
+        <li class="header__link-wrapper">
+          <a href="./" class="header__link"> Home </a>
+        </li>
+        <li class="header__link-wrapper">
+          <a href="./#about" class="header__link">About </a>
+        </li>
+        <li class="header__link-wrapper">
+          <a href="./#projects" class="header__link"> Projects </a>
+        </li>
+        <li class="header__link-wrapper">
+          <a href="./#contact" class="header__link"> Contact </a>
+        </li>
+      </ul>
+      <div class="header__main-ham-menu-cont">
+        <img
+          src="./assets/svg/ham-menu.svg"
+          alt="hamburger menu"
+          class="header__main-ham-menu"
+        />
+      </div>
+    </div>
+  </div>
+  <div class="header__sm-menu">
+    <div class="header__sm-menu-content">
+      <ul class="header__sm-menu-links">
+        <li class="header__sm-menu-link">
+          <a href="./"> Home </a>
+        </li>
+
+        <li class="header__sm-menu-link">
+          <a href="./#about"> About </a>
+        </li>
+
+        <li class="header__sm-menu-link">
+          <a href="./#projects"> Projects </a>
+        </li>
+
+        <li class="header__sm-menu-link">
+          <a href="./#contact"> Contact </a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </header>
+<!-- END Header -->
 ```
 
-### Lead Section
+### Hero Section of Homepage
 
-The Lead section is pretty straightforward, it contains an h1 for your name and an h2 for your title. It also contains a link that can be used to link to your resume should you wish to add it as well.
+- On `.heading-primary`, put your custom title.
+- On `.text-primary`, put a short description about yourself.
+- On `.home-hero__social-icon-link`, fill the href attribute with a link related to your social media account.
 
-If you want your resume to automatically download when the button is clicked instead of opening up in another tab (the default behaviour), add the following code (Thanks to jkfran for the suggestion) in the lead:
-
-```HTML
-<a href="path/to/resume.pdf" download="resume.pdf" class="btn-rounded-white">Download Resume</a>
+```html
+<!-- **** Hero Section of Homepage **** -->
+<section class="home-hero">
+  <div class="home-hero__content">
+    <h1 class="heading-primary">Hey, My name is John Doe</h1>
+    <div class="home-hero__info">
+      <p class="text-primary">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
+        tempora explicabo quae quod deserunt eius sapiente solutions for complex
+        problems
+      </p>
+    </div>
+    <div class="home-hero__cta">
+      <a href="./#projects" class="btn btn--bg">Projects</a>
+    </div>
+  </div>
+  <div class="home-hero__socials">
+    <div class="home-hero__social">
+      <a href="#" class="home-hero__social-icon-link">
+        <img
+          src="./assets/png/linkedin-ico.png"
+          alt="icon"
+          class="home-hero__social-icon"
+        />
+      </a>
+    </div>
+    <div class="home-hero__social">
+      <a href="#" class="home-hero__social-icon-link">
+        <img
+          src="./assets/png/github-ico.png"
+          alt="icon"
+          class="home-hero__social-icon"
+        />
+      </a>
+    </div>
+    <div class="home-hero__social">
+      <a href="#" class="home-hero__social-icon-link">
+        <img
+          src="./assets/png/twitter-ico.png"
+          alt="icon"
+          class="home-hero__social-icon"
+        />
+      </a>
+    </div>
+    <div class="home-hero__social">
+      <a href="#" class="home-hero__social-icon-link">
+        <img
+          src="./assets/png/yt-ico.png"
+          alt="icon"
+          class="home-hero__social-icon"
+        />
+      </a>
+    </div>
+    <div class="home-hero__social">
+      <a
+        href="#"
+        class="home-hero__social-icon-link home-hero__social-icon-link--bd-none"
+      >
+        <img
+          src="./assets/png/insta-ico.png"
+          alt="icon"
+          class="home-hero__social-icon"
+        />
+      </a>
+    </div>
+  </div>
+  <div class="home-hero__mouse-scroll-cont">
+    <div class="mouse"></div>
+  </div>
+</section>
+<!-- /END Hero Section -->
 ```
-
-The href attribute points to where your resume is stored and the download attribute is what triggers the download / provides the name the file will be downloaded as when the user clicks the button (In this case, it will download as resume.pdf).
 
 ### About Section
 
-The about section contains a quick about blurb that can be edited by changing the text within the paragraph tags.
+- On `.heading-sec__sub`, put a short description about the section.
+- On `.about__content-details-para`, put your details here and use `<strong></strong>` tag to highlight specific keywords.
+- On `.skills__skill`, mention your skill one by one.
 
-### Experience Section
-
-The experience section creates a vertical timeline with all your relevant experience. The code for the timeline creation can be found within `js/scripts.js` and is an adaptaion of [RyanFitzgerald/vertical-timeline](https://github.com/RyanFitzgerald/vertical-timeline).
-
-The default format is as follows:
-
-```HTML
-<div id="experience-timeline">
-    <div data-date="September 2015 – September 2016">
-        <h3>Employer Name</h3>
-        <h4>Job Title</h4>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex.
-        </p>
-    </div>
-</div>
-```
-
-The data attribute `data-date` is what is used to add a date to the associated timeline point. All that is really required is a wrapping div (i.e. `#experience-timeline`) and nested divs to build the timeline. The h3, h4, and p tags are optional and the contents of the div can be styled however you wish.
-
-To add additional section, simply add additional nested divs under the main wrapping div.
-
-### Education Section
-
-The Education is just a series of `.education-block` classes with some details associated with them. By default, it shows school name, date, degree, and some additional details. For example:
-
-```HTML
-<div class="education-block">
-    <h3>University of Ottawa</h3>
-    <span class="education-date">Sept 2016 - Sept 2017</span>
-    <h4>Bachelor of Science in Computer Science</h4>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex.
-    </p>
-</div>
-```
-
-To add additional section, simply add additional `.education-block` elements.
-
-### Projects Section
-
-The Project section contains a number of `.project` elements that represent each of your projects. By default, it contains a 300x300 image under `.project-image` and relevant project information under `.project-info`. An example is as follows:
-
-```HTML
-<div class="project">
-    <div class="project-image">
-        <img src="images/project.jpg" />
-    </div>
-    <!-- End .project-image -->
-
-    <div class="project-info">
-        <h3>Project Name Here</h3>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex.
-        </p>
-        <a href="#">View Project</a>
-    </div>
-    <!-- End .project-info -->
-</div>
-```
-
-If you want to hide some projects by default, you can throw them in an additional row and add the markup for the "Show More" button. This would be done as follows:
-
-```HTML
-<!-- Projects Above -->
-
-<a id="view-more-projects" href="#">View More Projects</a>
-<div id="more-projects" class="row">
-    <div class="project shadow-large">
-        <div class="project-image">
-            <img src="images/project.jpg" />
+```html
+<!-- **** About Section of Homepage **** -->
+<section id="about" class="about sec-pad">
+  <div class="main-container">
+    <h2 class="heading heading-sec heading-sec__mb-med">
+      <span class="heading-sec__main">About Me</span>
+      <span class="heading-sec__sub">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
+        tempora explicabo quae quod deserunt eius sapiente
+      </span>
+    </h2>
+    <div class="about__content">
+      <div class="about__content-main">
+        <h3 class="about__content-title">Get to know me!</h3>
+        <div class="about__content-details">
+          <p class="about__content-details-para">
+            Hey! It's
+            <strong>John Doe</strong>
+            and I'm a <strong> Frontend Web Developer </strong> located in Los
+            Angeles. I've done
+            <strong> remote </strong>
+            projects for agencies, consulted for startups, and collaborated with
+            talented people to create
+            <strong>digital products </strong>
+            for both business and consumer use.
+          </p>
+          <p class="about__content-details-para">
+            I'm a bit of a digital product junky. Over the years, I've used
+            hundreds of web and mobile apps in different industries and
+            verticals. Feel free to
+            <strong>contact</strong> me here.
+          </p>
         </div>
-        <!-- End .project-image -->
-        <div class="project-info">
-            <h3>Project Name Here</h3>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-            </p>
-            <a href="#">View Project</a>
+        <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr"
+          >Contact</a
+        >
+      </div>
+      <div class="about__content-skills">
+        <h3 class="about__content-title">My Skills</h3>
+        <div class="skills">
+          <div class="skills__skill">HTML</div>
+          <div class="skills__skill">CSS</div>
+          <div class="skills__skill">JavaScript</div>
+          <div class="skills__skill">React</div>
+          <div class="skills__skill">SASS</div>
+          <div class="skills__skill">GIT</div>
+          <div class="skills__skill">Shopify</div>
+          <div class="skills__skill">Wordpress</div>
+          <div class="skills__skill">Google ADS</div>
+          <div class="skills__skill">Facebook Ads</div>
+          <div class="skills__skill">Android</div>
+          <div class="skills__skill">IOS</div>
         </div>
-        <!-- End .project-info -->
+      </div>
     </div>
-    <!-- End .project -->
-</div>
+  </div>
+</section>
+<!-- END About Section -->
 ```
 
-This will add a link that says "View More Projects" under the current projects and when clicked, all projects in the "More-projects" div will be shown. This is optional functionality and isn't provided by default. It is important that you keep the wrapping div ID intact ("#more-projects") as well as the anchor ID ("#view-more-projects"), however the contents of the div and the anchor text itself can be edited however you like.
+### Projects
 
-#### Projects without images
+- On `.heading-sec__sub`, put a short description about the section.
+- `.projects__row` is the row for each project in your portfolio.
+- One `.projects__row` for each project in your portfolio ( so for example, if you have 3 projects then you need 3 `.projects__row` one by one).
 
-If you do not wish to have a project image associated with a project, you can simply add `no-image` as an additional class to the project. It would look like the following:
+- Inside each `projects__row`, there are 4 main elements.
 
-```HTML
-<div class="project no-image">
-    <div class="project-info">
-        <h3>Project Name Here</h3>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex.
-        </p>
-        <a href="#">View Project</a>
+  - Project Image is located at `.projects__row-img` where you can add the URL for your project mockup/image. You can use websites like [Media Modifier](https://mediamodifier.com/) and [SmartMockups](https://smartmockups.com) to generate mockups for free. Just make sure to crop the extra white space around your mockup so the mockups can look bigger and the size of the mockup file will be less.
+
+  - `.projects__row-content-title` is where you need to add your Project title.
+  - `.projects__row-content-desc` is where you need to add a short 2-3 lines description of your project. As there's going to be a separate page for each project so there you can add all the details for each project on the specific project page.
+  - The Anchor tag ( **Case Study** button) on press will take you to the details page for each project ( For example: If you click the **Case Study** button of Project 1 then it will take you to the `project-1.html` file where you will have all the details about that particular project).
+
+Currently, I have already added a separate for each project ( considering there are 3 projects ) the file names are `project-1.html`, `project-2.html`, and `project-3.html`. They all contain the same code only the project title, description and image will change. If you like to add more projects then you can just create a new file for it and paste the same code that we have in `project-1.html` as the code is going to be the same and the only thing that you need to change is the data inside each project.
+
+```html
+<!-- **** Projects Section of Homepage **** -->
+<section id="projects" class="projects sec-pad">
+  <div class="main-container">
+    <h2 class="heading heading-sec heading-sec__mb-bg">
+      <span class="heading-sec__main">Projects</span>
+      <span class="heading-sec__sub">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
+        tempora explicabo quae quod deserunt eius sapiente
+      </span>
+    </h2>
+
+    <div class="projects__content">
+      <div class="projects__row">
+        <div class="projects__row-img-cont">
+          <img
+            src="./assets/jpeg/project-mockup-example.jpeg"
+            alt="Software Screenshot"
+            class="projects__row-img"
+            loading="lazy"
+          />
+        </div>
+        <div class="projects__row-content">
+          <h3 class="projects__row-content-title">Project 1</h3>
+          <p class="projects__row-content-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
+            tempora, explicabo quae quod deserunt eius sapiente praesentium.
+          </p>
+          <a
+            href="./project-1.html"
+            class="btn btn--med btn--theme dynamicBgClr"
+            target="_blank"
+            >Case Study</a
+          >
+        </div>
+      </div>
+      <div class="projects__row">
+        <div class="projects__row-img-cont">
+          <img
+            src="./assets/jpeg/project-mockup-example.jpeg"
+            alt="Software Screenshot"
+            class="projects__row-img"
+            loading="lazy"
+          />
+        </div>
+        <div class="projects__row-content">
+          <h3 class="projects__row-content-title">Project 2</h3>
+          <p class="projects__row-content-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
+            tempora, explicabo quae quod deserunt eius sapiente praesentium.
+          </p>
+          <a
+            href="./project-2.html"
+            class="btn btn--med btn--theme dynamicBgClr"
+            target="_blank"
+            >Case Study</a
+          >
+        </div>
+      </div>
+      <div class="projects__row">
+        <div class="projects__row-img-cont">
+          <img
+            src="./assets/jpeg/project-mockup-example.jpeg"
+            alt="Software Screenshot"
+            class="projects__row-img"
+            loading="lazy"
+          />
+        </div>
+        <div class="projects__row-content">
+          <h3 class="projects__row-content-title">Project 3</h3>
+          <p class="projects__row-content-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
+            tempora, explicabo quae quod deserunt eius sapiente praesentium.
+          </p>
+          <a
+            href="./project-3.html"
+            class="btn btn--med btn--theme dynamicBgClr"
+            target="_blank"
+            >Case Study</a
+          >
+        </div>
+      </div>
     </div>
-    <!-- End .project-info -->
-</div>
-```
-
-### Skills Section
-
-The Skills section is simply an unordered list that spits out a "Skill Cloud" with all the skills listed. To add / remove skills, simply edit or add list elements, like so:
-
-```HTML
-<ul>
-    <li>JavaScript</li>
-    <li>Python</li>
-    <li>Ruby</li>
-    <li>Go</li>
-    <li>Node.js</li>
-</ul>
+  </div>
+</section>
+<!-- END Projects Section -->
 ```
 
 ### Contact Section
 
-Since the page is static, I opted to use the awesome Formspree to allow for a contact form without the need for anything else. To use it, you must have the page hosted on a server (loading a basic HTML page won't work) where a referrer header is generated. Also, simply add the email to the action. An example is as follows:
+- On `.heading-sec__sub`, put a short description about the section.
+- `.contact__form-field` is the field inside form. Currently, there are 3 fields but you can add more fields as per your need but just make sure to change the name of **label** and **input/textarea** inside it.
 
-```HTML
-<form method="POST" action="https://formspree.io/email@email.com">
-    <input type="hidden" name="_subject" value="Contact request from personal website" />
-    <input type="email" name="_replyto" placeholder="Your email" required>
-    <textarea name="message" placeholder="Your message" required></textarea>
-    <button type="submit">Send</button>
-</form>
+If you like to know how to submit forms so you can receive the form details in your email then highly recommend using **formspree.io** as it's easier to set up and free to use. If you are using **Netlify** to host the site then Netlify has an inbuilt form receiver which you can use instead of **formspree**.
+
+```html
+<!-- **** Contact Section of Homepage **** -->
+<section id="contact" class="contact sec-pad dynamicBg">
+  <div class="main-container">
+    <h2 class="heading heading-sec heading-sec__mb-med">
+      <span class="heading-sec__main heading-sec__main--lt">Contact</span>
+      <span class="heading-sec__sub heading-sec__sub--lt">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
+        tempora explicabo quae quod deserunt eius sapiente
+      </span>
+    </h2>
+    <div class="contact__form-container">
+      <form action="#" class="contact__form">
+        <div class="contact__form-field">
+          <label class="contact__form-label" for="name">Name</label>
+          <input
+            required
+            placeholder="Enter Your Name"
+            type="text"
+            class="contact__form-input"
+            name="name"
+            id="name"
+          />
+        </div>
+        <div class="contact__form-field">
+          <label class="contact__form-label" for="email">Email</label>
+          <input
+            required
+            placeholder="Enter Your Email"
+            type="text"
+            class="contact__form-input"
+            name="email"
+            id="email"
+          />
+        </div>
+        <div class="contact__form-field">
+          <label class="contact__form-label" for="message">Message</label>
+          <textarea
+            required
+            cols="30"
+            rows="10"
+            class="contact__form-input"
+            placeholder="Enter Your Message"
+            name="message"
+            id="message"
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn--theme contact__btn">
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+<!-- END Contact Section -->
 ```
-For more information on configuration of the contact form or dealing with errors, check out [Formspree](https://formspree.io/).
 
-For a quick tutorial about formspree, check out this [tutsplus tutorial](https://webdesign.tutsplus.com/tutorials/quick-tip-add-a-formspree-form-to-your-static-sites--cms-23870) that covers different aspects and features of the form tool.
+
 
 ### Footer Section
 
-The Footer contains an optional copyright where you can place your name as well as an unordered list of all of your social or coding related profiles. By default it contains Github, Stack Overflow, Facebook, Twitter, and Google Plus. You can add or remove them easily and simply use the Font Awesome icon associated with the social profile you wish to use. For a list of all icons, [click here](http://fontawesome.io/icons/).
+- Inside h4 tag with the class `heading heading-sm text-lt` add your name.
+- On `.main-footer__short-desc` put a short description about yourself.
+- On Anchor tag inside `.main-footer__social-cont`, fill the href attribute with a link related to your social media account.
 
-### Optional Sections
-
-The template comes with an optional section that can be added to the page markup to list things like Certifications, Hobbies, and more (Note: these are not included by default). The markup for the additional optional section is as follows:
-
-```HTML
-<div class="optional-section background-alt">
-    <h2 class="heading">Section Name</h2>
-
-    <div class="optional-section-block">
-        <h3>Some content title</h3>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+```html
+<!-- **** Footer Section **** -->
+<footer class="main-footer">
+  <div class="main-container">
+    <div class="main-footer__upper">
+      <div class="main-footer__row main-footer__row-1">
+        <h2 class="heading heading-sm main-footer__heading-sm">
+          <span>Social</span>
+        </h2>
+        <div class="main-footer__social-cont">
+          <a target="_blank" rel="noreferrer" href="#">
+            <img
+              class="main-footer__icon"
+              src="./assets/png/linkedin-ico.png"
+              alt="icon"
+            />
+          </a>
+          <a target="_blank" rel="noreferrer" href="#">
+            <img
+              class="main-footer__icon"
+              src="./assets/png/github-ico.png"
+              alt="icon"
+            />
+          </a>
+          <a target="_blank" rel="noreferrer" href="#">
+            <img
+              class="main-footer__icon"
+              src="./assets/png/twitter-ico.png"
+              alt="icon"
+            />
+          </a>
+          <a target="_blank" rel="noreferrer" href="#">
+            <img
+              class="main-footer__icon"
+              src="./assets/png/yt-ico.png"
+              alt="icon"
+            />
+          </a>
+          <a target="_blank" rel="noreferrer" href="#">
+            <img
+              class="main-footer__icon main-footer__icon--mr-none"
+              src="./assets/png/insta-ico.png"
+              alt="icon"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="main-footer__row main-footer__row-2">
+        <h4 class="heading heading-sm text-lt">John Doe</h4>
+        <p class="main-footer__short-desc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit facilis
+          tempora explicabo quae quod deserunt
         </p>
-        <ul>
-            <li>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </li>
-            <li>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </li>
-            <li>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </li>
-        </ul>
+      </div>
     </div>
-    <!-- End .optional-section-block -->
 
-</div>
-<!-- End .optional-section -->
+    <div class="main-footer__lower">
+      &copy; Copyright 2021. Made by
+      <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
+        >Ram Maheshwari</a
+      >
+    </div>
+  </div>
+</footer>
+<!-- END Footer Section -->
 ```
 
-You can copy .optional-section-block for each new item you wish you have in the optional section. Also, the background-alt class may need to be removed depending on where the optional section is placed in your layout as this adds the grey background. If you play it at the bottom after "Skills", it can be used as is. Also, by default the border is applied at the top, but this can also be adjusted as needed.
+<br/>
 
-The optional section blocks have styling for h3 (the block title), h4, p, and ul tags by default.
+---
 
-## Changelog
+<br/>
 
-### 1.2.2
+## Step 3 - Project Page
 
-* Updated dependencies and gulpfile
+Each project will have its own Page. The project page will have important details about the project like the Project Title, Description, Technologies, Project Links, etc.
 
-### 1.2.1
+### Project Hero Section
 
-* Updated dependencies and gulpfile
-* Added `no-image` optional class for projects without images (see above for usage)
+- On `.heading-primary` add the Project Title.
+- On `.text-primary` add a short description about the Project.
+- On Anchor Tag that says **Live Link** with class `btn btn--bg`, add the Project Live Link as the value for the href attribute.
 
-### 1.2.0
+<!-- **** Project Section **** -->
 
-* Added support for optional "Show More Projects" that hides some projects by default if included
-* Added optional sections to display certifications, languages, etc.
+```html
+<section class="project-cs-hero">
+  <div class="project-cs-hero__content">
+    <h1 class="heading-primary">Project 1</h1>
+    <div class="project-cs-hero__info">
+      <p class="text-primary">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos in
+        numquam incidunt earum quaerat cum fuga, atque similique natus nobis
+        sit.
+      </p>
+    </div>
+    <div class="project-cs-hero__cta">
+      <a href="#" class="btn btn--bg" target="_blank">Live Link</a>
+    </div>
+  </div>
+</section>
+```
 
-### 1.1.3
+<!-- **** END Project Hero Section **** -->
 
-* Added default favicon to be used or changed
-* Added `sticky` class to make header fixed
-* Updated docs to add image section
+### Project Details Section
 
-### 1.1.2
+- On `.project-details__showcase-img`, change the value of **src** to the location/link of Project Mockup.
+- On `.project-details__desc-para` to add a detailed paragraph describing your project. Use multiple `.project-details__desc-para` elements for multiple paragraphs.
+- On `.skills` mention the skills that were used to build the project inside `.skills__skill` to mention each skill.
+- On Anchor Tag that says **Live Link** with class `btn btn--med btn--theme project-details__links-btn`, add the Project Live Link as the value for the href attribute.
+- On Anchor Tag that says **Code Link** with class `btn btn--med btn--theme-inv project-details__links-btn`, add the Project's Code Link ( Repository Link ) as the value for the href attribute.
 
-* Added `no-scroll` class option to header navigation anchor if you want to link to external site
-* Changed contact form input / textarea colours to be based off `$base-color`
-* Changed main background to 100vh so it doesn't overflow if viewport height < 700px
+<!-- **** Project Details Section **** -->
 
-### 1.1.1
+```html
+<section class="project-details">
+  <div class="main-container">
+    <div class="project-details__content">
+      <div class="project-details__showcase-img-cont">
+        <img
+          src="./assets/jpeg/project-mockup-example.jpeg"
+          alt="Project Image"
+          class="project-details__showcase-img"
+        />
+      </div>
+      <div class="project-details__content-main">
+        <div class="project-details__desc">
+          <h3 class="project-details__content-title">Project Overview</h3>
+          <p class="project-details__desc-para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque alias
+            tenetur minus quaerat aliquid, aut provident blanditiis, deleniti
+            aspernatur ipsam eaque veniam voluptatem corporis vitae mollitia
+            laborum corrupti ullam rem. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Neque alias tenetur minus quaerat aliquid, aut
+            provident blanditiis, deleniti aspernatur ipsam eaque veniam
+            voluptatem corporis vitae mollitia laborum corrupti ullam rem?
+          </p>
+          <p class="project-details__desc-para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque alias
+            tenetur minus quaerat aliquid, aut provident blanditiis, deleniti
+            aspernatur ipsam eaque veniam voluptatem corporis vitae mollitia
+            laborum corrupti ullam rem?
+          </p>
+        </div>
+        <div class="project-details__tools-used">
+          <h3 class="project-details__content-title">Tools Used</h3>
+          <div class="skills">
+            <div class="skills__skill">HTML</div>
+            <div class="skills__skill">CSS</div>
+            <div class="skills__skill">JavaScript</div>
+            <div class="skills__skill">React</div>
+            <div class="skills__skill">SASS</div>
+            <div class="skills__skill">GIT</div>
+            <div class="skills__skill">Shopify</div>
+            <div class="skills__skill">Wordpress</div>
+            <div class="skills__skill">Google ADS</div>
+            <div class="skills__skill">Facebook Ads</div>
+            <div class="skills__skill">Android</div>
+            <div class="skills__skill">IOS</div>
+          </div>
+        </div>
+        <div class="project-details__links">
+          <h3 class="project-details__content-title">See Live</h3>
+          <a
+            href="#"
+            class="btn btn--med btn--theme project-details__links-btn"
+            target="_blank"
+            >Live Link</a
+          >
+          <a
+            href="#"
+            class="btn btn--med btn--theme-inv project-details__links-btn"
+            target="_blank"
+            >Code Link</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+```
 
-* Made input placeholder text more readable
-* Removed timeline line when no JS
-* Added some basic styling to timeline when no JS
+<!-- **** END Project Details Section **** -->
 
-### 1.1.0
+<br>
 
-* Fixed menu toggle on mobile devices
-* Fixed z-index / scrolling issue with mobile menu
-* Mobile menu now closes once a nav element is hit
+---
 
-## License
+<br>
 
-Completely free (MIT)! See [LICENSE.md](LICENSE.md) for more.
+
+## Deployment 📦
+
+Once you have done with your setup. You need to put your website online!
+
+I highly recommend to use [Netlify](https://netlify.com) to achieve this on the EASIEST WAY
+
+Whenever you wanna host a new site on Netlify. You will need to press the **Create New Site** button from the Netlify's dashboard once you login into Netlify.
+
+Once you press the **Create Site Button** then you will have to follow the 3 steps:
+
+1. You will have to select your Github account.
+
+2. Then select the Repository which you wanna host, in this case its your Portfolio website ( Clone of Dopefolio )
+
+3. In the 3rd step, you will have to modify the **Site settings and deploy**, keep everything as it is but just make sure to modify the **Build command** and set its value to **npm run build** and then modify the **Publish directory** and set its value to **/** as shown in the  **image** below
+
+<div align="center">
+  <img src="https://i.ibb.co/hDTTrPB/Set-Build-Command-to.png" alt="Dopefolio Build Command Example and Publish Directory Value" width="100%" />
+  <br>
+</div>
+
+<br>
+
+Then hit the **Deploy site** button and your **Portfolio Site** is live 🥳
+
+<br>
+
+---
+
+<br>
+
+## Give a Star ⭐
+
+If you like this project then give it a **Github** star by pressing the **Star** button ⭐
+
+<br>
+
+---
+
+<br>
+
+## Author 👨‍💻
+
+- **Ram Maheshwari** - **[Linkedin](https://linkedin.com/in/rammcodes)**, **[Twitter](https://twitter.com/rammcodes)**, **[Github](https://github.com/rammcodes)**, **[Portfolio](https://rammaheshwari.com)**  
+
+<br>
+
+#### Note: 
+I'm currently looking for good **Job Opportunities** both **Remote ( Worldwide )** and **On-Site ( Anywhere in India )**. So, if you have a good opportunity that matches my skills experience then you can contact me on my **[Linkedin](https://linkedin.com/in/rammcodes)** or my email id **rammcodes@gmail.com** 🙌
+
+
+<br>
+
+---
+
+<br>
+
+## Special Thanks ❤️
+
+Special thanks to [Jacobo Martínez](https://github.com/cobidev) for inspiring me to create something useful for the Developer Community. **Jacobo** is the creator of [Simplefolio](https://github.com/cobidev/simplefolio) which is another great Portfolio website Template for Developers. Check it out and show him some love ❤️
+
+<br>
+
+---
+
+<br>
+
+## License 📄
+
+This project is licensed under the  **GPL-3.0** License - see the [LICENSE](LICENSE) file for details
+
