@@ -277,9 +277,25 @@ textarea {
 
 .projects__row {
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  grid-gap: 5rem;
+  grid-template-columns: 1fr 1.5fr;
+  grid-gap: 2rem;
   margin-bottom: 11rem; }
+
+  @media screen and (min-width: 992px) {
+    .projects__row-content {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  
+    .projects__row-img-cont {
+      height: 400px;
+    }
+  
+    .projects__row-img {
+      height: 400px;
+    }
+  }
   @media only screen and (max-width: 56.25em) {
     .projects__row {
       grid-template-columns: 1fr;
@@ -293,7 +309,8 @@ textarea {
   .projects__row-img-cont {
     overflow: hidden; }
   .projects__row-img {
-    width: 100%;
+    top: 50%;
+	  padding: 30px;
     display: block;
     object-fit: cover; }
   .projects__row-content {
