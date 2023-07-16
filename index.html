@@ -1,439 +1,365 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Ege's Portfolio</title>
-    <meta name="description" content="Web Portfolio for my engineering projects" />
 
-    <link rel="stylesheet" href="css/style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Ege's Portfolio</title>
+  <meta name="description" content="Web Portfolio for my engineering projects" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header class="header">
-      <div class="header__content">
-        <div class="header__logo-container">
-          <div class="header__logo-img-cont">
-            <img
-              src="./assets/png/ege-hsgngr.png"
-              alt="Ege Hosgungor Linkedin Image"
-              class="header__logo-img"
-            />
-          </div>
-          <span class="header__logo-sub">Ege Hoşgüngör</span>
+  <link rel="stylesheet" href="css/style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__content">
+      <div class="header__logo-container">
+        <div class="header__logo-img-cont">
+          <img src="./assets/png/ege-hsgngr.png" alt="Ege Hosgungor Linkedin Image" class="header__logo-img" />
         </div>
-        <div class="header__main">
-          <ul class="header__links">
-            <li class="header__link-wrapper">
-              <a href="./index.html" class="header__link"> Home </a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./index.html#about" class="header__link">About </a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./index.html#projects" class="header__link">
-                Projects
-              </a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./index.html#contact" class="header__link"> Contact </a>
-            </li>
-          </ul>
-          <div class="header__main-ham-menu-cont">
-            <img
-              src="./assets/svg/ham-menu.svg"
-              alt="hamburger menu"
-              class="header__main-ham-menu"
-            />
-            <img
-              src="./assets/svg/ham-menu-close.svg"
-              alt="hamburger menu close"
-              class="header__main-ham-menu-close d-none"
-            />
-          </div>
+        <span class="header__logo-sub">Ege Hoşgüngör</span>
+      </div>
+      <div class="header__main">
+        <ul class="header__links">
+          <li class="header__link-wrapper">
+            <a href="./index.html" class="header__link"> Home </a>
+          </li>
+          <li class="header__link-wrapper">
+            <a href="./index.html#about" class="header__link">About </a>
+          </li>
+          <li class="header__link-wrapper">
+            <a href="./index.html#projects" class="header__link">
+              Projects
+            </a>
+          </li>
+          <li class="header__link-wrapper">
+            <a href="./index.html#contact" class="header__link"> Contact </a>
+          </li>
+        </ul>
+        <div class="header__main-ham-menu-cont">
+          <img src="./assets/svg/ham-menu.svg" alt="hamburger menu" class="header__main-ham-menu" />
+          <img src="./assets/svg/ham-menu-close.svg" alt="hamburger menu close"
+            class="header__main-ham-menu-close d-none" />
         </div>
       </div>
-      <div class="header__sm-menu">
-        <div class="header__sm-menu-content">
-          <ul class="header__sm-menu-links">
-            <li class="header__sm-menu-link">
-              <a href="./index.html"> Home </a>
-            </li>
+    </div>
+    <div class="header__sm-menu">
+      <div class="header__sm-menu-content">
+        <ul class="header__sm-menu-links">
+          <li class="header__sm-menu-link">
+            <a href="./index.html"> Home </a>
+          </li>
 
-            <li class="header__sm-menu-link">
-              <a href="./index.html#about"> About </a>
-            </li>
+          <li class="header__sm-menu-link">
+            <a href="./index.html#about"> About </a>
+          </li>
 
-            <li class="header__sm-menu-link">
-              <a href="./index.html#projects"> Projects </a>
-            </li>
+          <li class="header__sm-menu-link">
+            <a href="./index.html#projects"> Projects </a>
+          </li>
 
-            <li class="header__sm-menu-link">
-              <a href="./index.html#contact"> Contact </a>
-            </li>
-          </ul>
-        </div>
+          <li class="header__sm-menu-link">
+            <a href="./index.html#contact"> Contact </a>
+          </li>
+        </ul>
       </div>
-    </header>
-    <section class="home-hero">
-      <div class="home-hero__content">
-        <h1 class="heading-primary"> Ege Hosgungor</h1>
-        <div class="home-hero__info">
-          <p class="text-primary">
+    </div>
+  </header>
+  <section class="home-hero">
+    <div class="home-hero__content">
+      <h1 class="heading-primary"> Ege Hosgungor</h1>
+      <div class="home-hero__info">
+        <p class="text-primary">
           Data Scientist in Robotics
-          </p>
-        </div>
-        <div class="home-hero__cta">
-          <a href="assets\papers\resume2022.pdf" class="btn btn--bg">Resume</a>
-        </div>
-        <div class="home-hero__cta">
-          <a href="./#projects" class="btn btn--bg">Projects</a>
-        </div>
+        </p>
       </div>
-      <div class="home-hero__socials">
-        <div class="home-hero__social">
-          <a href="https://www.linkedin.com/in/hosgungor/" class="home-hero__social-icon-link">
-            <img
-              src="./assets/png/linkedin-ico.png"
-              alt="icon"
-              class="home-hero__social-icon"
-            />
-          </a>
-        </div>
-        <div class="home-hero__social">
-          <a href="https://github.com/Hsgngr" class="home-hero__social-icon-link">
-            <img
-              src="./assets/png/github-ico.png"
-              alt="icon"
-              class="home-hero__social-icon"
-            />
-          </a>
-        </div>
-        <div class="home-hero__social">
-          <a href="https://www.youtube.com/watch?v=UaCITyHXu8I" class="home-hero__social-icon-link">
-            <img
-              src="./assets/png/yt-ico.png"
-              alt="icon"
-              class="home-hero__social-icon"
-            />
-          </a>
-        </div>
+      <div class="home-hero__cta">
+        <a href="assets\papers\resume2022.pdf" class="btn btn--bg">Resume</a>
+      </div>
+      <div class="home-hero__cta">
+        <a href="./#projects" class="btn btn--bg">Projects</a>
+      </div>
+    </div>
+    <div class="home-hero__socials">
+      <div class="home-hero__social">
+        <a href="https://www.linkedin.com/in/hosgungor/" class="home-hero__social-icon-link">
+          <img src="./assets/png/linkedin-ico.png" alt="icon" class="home-hero__social-icon" />
+        </a>
+      </div>
+      <div class="home-hero__social">
+        <a href="https://github.com/Hsgngr" class="home-hero__social-icon-link">
+          <img src="./assets/png/github-ico.png" alt="icon" class="home-hero__social-icon" />
+        </a>
+      </div>
+      <div class="home-hero__social">
+        <a href="https://www.youtube.com/watch?v=UaCITyHXu8I" class="home-hero__social-icon-link">
+          <img src="./assets/png/yt-ico.png" alt="icon" class="home-hero__social-icon" />
+        </a>
+      </div>
 
-      </div>
-      <div class="home-hero__mouse-scroll-cont">
-        <div class="mouse"></div>
-      </div>
-    </section>
-    <section id="about" class="about sec-pad">
-      <div class="main-container">
-        <h2 class="heading heading-sec heading-sec__mb-med">
-          <span class="heading-sec__main">About Me</span>
-          <span class="heading-sec__sub">
-            A Data Scientist with a Mechanical Engineering Background 💻/⚙️
-          </span>
-        </h2>
-        <div class="about__content">
-          <div class="about__content-main">
-            <h3 class="about__content-title">Summary</h3>
-            <div class="about__content-details">
-              <p class="about__content-details-para">
-                Hey! It's
-                <strong>Ege Hosgungor</strong>
-                and I'm a <strong> Data Scientist </strong> located in
-                London. This is my portfolio, a showcase for my projects. I'm looking for other artists/engineers as collaborators for new projects! Currently I'm interested in <strong>AI in Robotics</strong>, <strong>Edge Computing</strong> and personal favourite <strong>Animatronics</strong>. 
-                
-              </p>
-            </div>
-            <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr"
-              >Contact</a
-            >
+    </div>
+    <div class="home-hero__mouse-scroll-cont">
+      <div class="mouse"></div>
+    </div>
+  </section>
+  <section id="about" class="about sec-pad">
+    <div class="main-container">
+      <h2 class="heading heading-sec heading-sec__mb-med">
+        <span class="heading-sec__main">About Me</span>
+        <span class="heading-sec__sub">
+          A Data Scientist with a Mechanical Engineering Background 💻/⚙️
+        </span>
+      </h2>
+      <div class="about__content">
+        <div class="about__content-main">
+          <h3 class="about__content-title">Summary</h3>
+          <div class="about__content-details">
+            <p class="about__content-details-para">
+              Hey! It's
+              <strong>Ege Hosgungor</strong>
+              and I'm a <strong> Data Scientist </strong> located in
+              London. This is my portfolio, a showcase for my projects. I'm looking for other artists/engineers as
+              collaborators for new projects! Currently I'm interested in <strong>AI in Robotics</strong>, <strong>Edge
+                Computing</strong> and personal favourite <strong>Animatronics</strong>.
+
+            </p>
           </div>
-          <div class="about__content-skills">
-            <h3 class="about__content-title">My Skills</h3>
-            <div class="skills">
-              <div class="skills__skill">Machine Learning</div>
-              <div class="skills__skill">Deep Learning</div>
-              <div class="skills__skill">Reinforcement Learning</div>
-              <div class="skills__skill">Python</div>
-              <div class="skills__skill">SQL</div>
-              <div class="skills__skill">Data Driven Development</div>
-              <div class="skills__skill">Robotics</div>
-              <div class="skills__skill">Simulation</div>
-              <div class="skills__skill">CAD</div>
-              <div class="skills__skill">C#</div>
-              <div class="skills__skill">Unity</div>
-              <div class="skills__skill">Google Cloud Platform (GCP)</div>
-              <div class="skills__skill">Apache Airflow</div>
-            </div>
+          <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr">Contact</a>
+        </div>
+        <div class="about__content-skills">
+          <h3 class="about__content-title">My Skills</h3>
+          <div class="skills">
+            <div class="skills__skill">Machine Learning</div>
+            <div class="skills__skill">Deep Learning</div>
+            <div class="skills__skill">Reinforcement Learning</div>
+            <div class="skills__skill">Python</div>
+            <div class="skills__skill">SQL</div>
+            <div class="skills__skill">Data Driven Development</div>
+            <div class="skills__skill">Robotics</div>
+            <div class="skills__skill">Simulation</div>
+            <div class="skills__skill">CAD</div>
+            <div class="skills__skill">C#</div>
+            <div class="skills__skill">Unity</div>
+            <div class="skills__skill">Google Cloud Platform (GCP)</div>
+            <div class="skills__skill">Apache Airflow</div>
           </div>
         </div>
       </div>
-    </section>
-    <section id="projects" class="projects sec-pad">
-      <div class="main-container">
-        <h2 class="heading heading-sec heading-sec__mb-bg">
-          <span class="heading-sec__main">Projects</span>
+    </div>
+  </section>
+  <section id="projects" class="projects sec-pad">
+    <div class="main-container">
+      <h2 class="heading heading-sec heading-sec__mb-bg">
+        <span class="heading-sec__main">Projects</span>
 
-<!--           <span class="heading-sec__sub">
+        <!--           <span class="heading-sec__sub">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
             tempora explicabo quae quod deserunt eius sapiente
           </span> -->
 
-        </h2>
+      </h2>
 
-        <div class="projects__content">
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                src="assets\projects\thesis_last.png"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">MSc Thesis: Simulation-Based Reinforcement Learning for Social Distancing</h3>
-              <p class="projects__row-content-desc">
-                Created epidemic simulation with RL environment, trained agents to learn social distancing & self-quarantine.
-                 Proved efficacy in flattening epidemic curve. Project received distinction & showcased on Unity.
-              </p>
-              <a
-                href="https://github.com/Hsgngr/Pandemic_Simulation"
-                class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank"
-                >View Project</a
-              >
-            </div>
+      <div class="projects__content">
+
+        <div class="projects__row">
+          <div class="projects__row-img-cont" style="display: flex; justify-content: center; align-items: center;">
+            <img src="assets\projects\1e191.png" alt="SMSBOTU Company" class="projects__row-img" loading="lazy" />
           </div>
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                src="assets\projects\hackathons_2.jpeg"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Multiple Datathons / Kaggle Competitions Winner </h3>
-              <ul class="projects__row-content-desc">
-                <li>Brighton Memorable City Top 10 Ranking</li>
-                <li>Formula AI Hackathon New Comer Team Award</li>
-                <li>AirBnb Data Analysis Kaggle Competition</li>
-                <li>US Census Data Income Classification Challenge</li>
-                <li>Academic Article Classification Challenge Award Winner</li>
-              </ul>
-              <a
-                href="https://github.com/Hsgngr/"
-                class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank"
-                >Go to the Github Page</a
-              >
-            </div>
-          </div>
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                src="assets\projects\HapticVr.png"
-                alt="Hardware Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Haptic Feedback Glove for Virtual Reality</h3>
-              <p class="projects__row-content-desc">
-                The design of the vibrotactile hand interface for virtual reality project aimed users to
-                feel the virtual object via tactile feedback on their hands and increase general sense of reality in Virtual Reality.
-                Won Best Senior Mechanical Engineering Project in 2018-2019
-              </p>
-              <a
-                href="https://www.youtube.com/watch?v=UaCITyHXu8I"
-                class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank"
-                >Watch the Trailer</a
-              >
-            </div>
-          </div>
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                src="assets\projects\briefcase_gig.png"
-                alt="Animation Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Animatronics Briefcase</h3>
-              <p class="projects__row-content-desc">
-              An end-to-end animatronics project that I work on as a side hustle project. From the mechanism designs, software development to international clown performance I enjoy working on it.
+          <div class="projects__row-content">
+            <h3 class="projects__row-content-title">SaaS Product: SMSBOTU - Access Internet Information via SMS Powered by LLMs</h3>
+            <p class="projects__row-content-desc">
+              <a href="https://smsbotu.com/" target="_blank">SMSBOTU</a> is a state-of-the-art SaaS product that harnesses the power of SMS and AI to provide critical
+              internet information without the need for conventional online access. Whether you're inquiring about
+              weather forecasts, financial news, or trivia, SMSBOTU responds to your SMS inquiries promptly and
+              accurately. Powered by OpenAI's GPT-4, our service is designed to bridge the digital divide, making
+              essential knowledge accessible anytime, anywhere. While it's a unique tool for various use cases, it's
+              particularly beneficial for individuals in restricted digital environments, such as Turkish soldiers
+              serving their mandatory military service without smartphone access. With SMSBOTU, we're bringing a world
+              of information to your fingertips, one text at a time.
             </p>
-            <a                
-                class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank"
-                >Work in Progress!</a
-              >
-            </div>
-          </div>
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                src="assets\projects\flirty_lamp_300.png"
-                alt="Animation Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
-              
-            </div>            
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Flirty Pixar Lamp</h3>
-              <p class="projects__row-content-desc">
-                This short animation was created for the "Animation and Modelling" course at the University of Sussex using Cinema4D.
-              </p>
-              <a
-                href="https://www.youtube.com/watch?v=d19e3JlTT-w"
-                class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank"
-                >Watch the Animation</a
-              >
-            </div>
-          </div>
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                src="assets\projects\kutwin.png"
-                alt="Video Game Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">KU-TWIN (Digital Twin)</h3>
-              <p class="projects__row-content-desc">
-                I leaded the KARMA Lab's KU-TWIN project, creating a digital twin of Koç University.
-                We used photogrammetric models and point cloud data to remodel all campus buildings,
-                resulting in a VR experience with unique exploration possibilities such as time-travel and perspective-shifting.
-                Our ultimate goal was to create a comprehensive digital twin of the university.
-              </p>
-              <a
-                href="https://karma.ku.edu.tr/en/projects"
-                class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank"
-                >View the KARMA Lab</a
-              >
-            </div>
+            <a href="https://smsbotu.com/" class="btn btn--med btn--theme dynamicBgClr"
+              target="_blank">View Project</a>
           </div>
         </div>
-      </div>
-    </section>
-    <section id="contact" class="contact sec-pad dynamicBg">
-      <div class="main-container">
-        <h2 class="heading heading-sec heading-sec__mb-med">
-          <span class="heading-sec__main heading-sec__main--lt">Contact</span>
-          <span class="heading-sec__sub heading-sec__sub--lt">
-            Leave a Message!
-          </span>
-        </h2>
-        <div class="contact__form-container">
-          <form method="POST" action="https://formspree.io/hsgngr@gmail.com" class="contact__form">
-            <div class="contact__form-field">
-              <label class="contact__form-label" for="name">Name</label>
-              <input
-                required
-                placeholder="Enter Your Name"
-                type="name"
-                class="contact__form-input"
-                name="name"
-                id="name"
-              />
-            </div>
-            <div class="contact__form-field">
-              <label class="contact__form-label" for="email">Email</label>
-              <input
-                required
-                placeholder="Enter Your Email"
-                type="email"
-                class="contact__form-input"
-                name="email"
-                id="email"
-              />
-            </div>
-            <div class="contact__form-field">
-              <label class="contact__form-label" for="message">Message</label>
-              <textarea
-                required
-                cols="30"
-                rows="10"
-                class="contact__form-input"
-                placeholder="Enter Your Message"
-                name="message"
-                id="message"
-              ></textarea>
-            </div>
-            <button type="submit" class="btn btn--theme contact__btn">
-              Submit
-            </button>
-          </form>
-        </div>
-      </div>
-    </section>
-    <footer class="main-footer">
-      <div class="main-container">
-        <div class="main-footer__upper">
-          <div class="main-footer__row main-footer__row-1">
-            <h2 class="heading heading-sm main-footer__heading-sm">
-              <span>Social</span>
-            </h2>
-            <div class="main-footer__social-cont">
-              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/hosgungor/">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/linkedin-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="https://github.com/Hsgngr">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/github-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=UaCITyHXu8I">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/yt-ico.png"
-                  alt="icon"
-                />
-              </a>
-            </div>
+        
+
+        <div class="projects__row">
+          <div class="projects__row-img-cont">
+            <img src="assets\projects\thesis_last.png" alt="Software Screenshot" class="projects__row-img"
+              loading="lazy" />
           </div>
-          <div class="main-footer__row main-footer__row-2">
-            <h4 class="heading heading-sm text-lt">Ege Hosgungor</h4>
-            <p class="main-footer__short-desc">
-              
+          <div class="projects__row-content">
+            <h3 class="projects__row-content-title">MSc Thesis: Simulation-Based Reinforcement Learning for Social
+              Distancing</h3>
+            <p class="projects__row-content-desc">
+              Created epidemic simulation with RL environment, trained agents to learn social distancing &
+              self-quarantine.
+              Proved efficacy in flattening epidemic curve. Project received distinction & showcased on Unity.
             </p>
+            <a href="https://github.com/Hsgngr/Pandemic_Simulation" class="btn btn--med btn--theme dynamicBgClr"
+              target="_blank">View Project</a>
           </div>
         </div>
+        <div class="projects__row">
+          <div class="projects__row-img-cont">
+            <img src="assets\projects\hackathons_2.jpeg" alt="Software Screenshot" class="projects__row-img"
+              loading="lazy" />
+          </div>
+          <div class="projects__row-content">
+            <h3 class="projects__row-content-title">Multiple Datathons / Kaggle Competitions Winner </h3>
+            <ul class="projects__row-content-desc">
+              <li>Brighton Memorable City Top 10 Ranking</li>
+              <li>Formula AI Hackathon New Comer Team Award</li>
+              <li>AirBnb Data Analysis Kaggle Competition</li>
+              <li>US Census Data Income Classification Challenge</li>
+              <li>Academic Article Classification Challenge Award Winner</li>
+            </ul>
+            <a href="https://github.com/Hsgngr/" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Go to the
+              Github Page</a>
+          </div>
+        </div>
+        <div class="projects__row">
+          <div class="projects__row-img-cont">
+            <img src="assets\projects\HapticVr.png" alt="Hardware Screenshot" class="projects__row-img"
+              loading="lazy" />
+          </div>
+          <div class="projects__row-content">
+            <h3 class="projects__row-content-title">Haptic Feedback Glove for Virtual Reality</h3>
+            <p class="projects__row-content-desc">
+              The design of the vibrotactile hand interface for virtual reality project aimed users to
+              feel the virtual object via tactile feedback on their hands and increase general sense of reality in
+              Virtual Reality.
+              Won Best Senior Mechanical Engineering Project in 2018-2019
+            </p>
+            <a href="https://www.youtube.com/watch?v=UaCITyHXu8I" class="btn btn--med btn--theme dynamicBgClr"
+              target="_blank">Watch the Trailer</a>
+          </div>
+        </div>
+        <div class="projects__row">
+          <div class="projects__row-img-cont">
+            <img src="assets\projects\briefcase_gig.png" alt="Animation Screenshot" class="projects__row-img"
+              loading="lazy" />
+          </div>
+          <div class="projects__row-content">
+            <h3 class="projects__row-content-title">Animatronics Briefcase</h3>
+            <p class="projects__row-content-desc">
+              An end-to-end animatronics project that I work on as a side hustle project. From the mechanism designs,
+              software development to international clown performance I enjoy working on it.
+            </p>
+            <a class="btn btn--med btn--theme dynamicBgClr" target="_blank">Work in Progress!</a>
+          </div>
+        </div>
+        <div class="projects__row">
+          <div class="projects__row-img-cont">
+            <img src="assets\projects\flirty_lamp_300.png" alt="Animation Screenshot" class="projects__row-img"
+              loading="lazy" />
 
-        <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
-        <div class="main-footer__lower">
-          &copy; Copyright 2023. Made by
-          <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
-            >Ram Maheshwari</a
-          >
+          </div>
+          <div class="projects__row-content">
+            <h3 class="projects__row-content-title">Flirty Pixar Lamp</h3>
+            <p class="projects__row-content-desc">
+              This short animation was created for the "Animation and Modelling" course at the University of Sussex
+              using Cinema4D.
+            </p>
+            <a href="https://www.youtube.com/watch?v=d19e3JlTT-w" class="btn btn--med btn--theme dynamicBgClr"
+              target="_blank">Watch the Animation</a>
+          </div>
+        </div>
+        <div class="projects__row">
+          <div class="projects__row-img-cont">
+            <img src="assets\projects\kutwin.png" alt="Video Game Screenshot" class="projects__row-img"
+              loading="lazy" />
+          </div>
+          <div class="projects__row-content">
+            <h3 class="projects__row-content-title">KU-TWIN (Digital Twin)</h3>
+            <p class="projects__row-content-desc">
+              I leaded the KARMA Lab's KU-TWIN project, creating a digital twin of Koç University.
+              We used photogrammetric models and point cloud data to remodel all campus buildings,
+              resulting in a VR experience with unique exploration possibilities such as time-travel and
+              perspective-shifting.
+              Our ultimate goal was to create a comprehensive digital twin of the university.
+            </p>
+            <a href="https://karma.ku.edu.tr/en/projects" class="btn btn--med btn--theme dynamicBgClr"
+              target="_blank">View the KARMA Lab</a>
+          </div>
         </div>
       </div>
-    </footer>
+    </div>
+  </section>
+  <section id="contact" class="contact sec-pad dynamicBg">
+    <div class="main-container">
+      <h2 class="heading heading-sec heading-sec__mb-med">
+        <span class="heading-sec__main heading-sec__main--lt">Contact</span>
+        <span class="heading-sec__sub heading-sec__sub--lt">
+          Leave a Message!
+        </span>
+      </h2>
+      <div class="contact__form-container">
+        <form method="POST" action="https://formspree.io/hsgngr@gmail.com" class="contact__form">
+          <div class="contact__form-field">
+            <label class="contact__form-label" for="name">Name</label>
+            <input required placeholder="Enter Your Name" type="name" class="contact__form-input" name="name"
+              id="name" />
+          </div>
+          <div class="contact__form-field">
+            <label class="contact__form-label" for="email">Email</label>
+            <input required placeholder="Enter Your Email" type="email" class="contact__form-input" name="email"
+              id="email" />
+          </div>
+          <div class="contact__form-field">
+            <label class="contact__form-label" for="message">Message</label>
+            <textarea required cols="30" rows="10" class="contact__form-input" placeholder="Enter Your Message"
+              name="message" id="message"></textarea>
+          </div>
+          <button type="submit" class="btn btn--theme contact__btn">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <footer class="main-footer">
+    <div class="main-container">
+      <div class="main-footer__upper">
+        <div class="main-footer__row main-footer__row-1">
+          <h2 class="heading heading-sm main-footer__heading-sm">
+            <span>Social</span>
+          </h2>
+          <div class="main-footer__social-cont">
+            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/hosgungor/">
+              <img class="main-footer__icon" src="./assets/png/linkedin-ico.png" alt="icon" />
+            </a>
+            <a target="_blank" rel="noreferrer" href="https://github.com/Hsgngr">
+              <img class="main-footer__icon" src="./assets/png/github-ico.png" alt="icon" />
+            </a>
+            <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=UaCITyHXu8I">
+              <img class="main-footer__icon" src="./assets/png/yt-ico.png" alt="icon" />
+            </a>
+          </div>
+        </div>
+        <div class="main-footer__row main-footer__row-2">
+          <h4 class="heading heading-sm text-lt">Ege Hosgungor</h4>
+          <p class="main-footer__short-desc">
 
-    <script src="./index.js"></script>
-  </body>
+          </p>
+        </div>
+      </div>
+
+      <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
+      <div class="main-footer__lower">
+        &copy; Copyright 2023. Made by
+        <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com">Ram Maheshwari</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./index.js"></script>
+</body>
+
 </html>
