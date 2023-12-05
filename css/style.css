@@ -1136,8 +1136,8 @@ textarea {
 }
 
 .desc a {
-  color: #0000EE; /* Blue color for hyperlinks */
-  text-decoration: underline; /* Adds an underline to the hyperlink */
+  color: #0000EE;
+  text-decoration: underline
 }
 
 @keyframes wheel {
