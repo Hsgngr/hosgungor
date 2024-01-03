@@ -1,4 +1,10 @@
 # How to Deploy the changes
 
-call firebase deploy to deploy the given domains in firebase.
-git commit to deploy on github page.
+
+# First login as correct user
+firebase logout
+firebase login
+
+# Then deploy the changes
+firebase deploy "for Firebase Hosting"
+git commit "for Github Pages"
