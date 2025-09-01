@@ -22,21 +22,16 @@
       <h2 class="heading heading-sec heading-sec__mb-med">
         <span class="heading-sec__main">Blog</span>
       </h2>
-      <div id="blog-list"></div>
+      <div id="blog-list" class="blog-cards"></div>
     </div>
   </section>
 
   <div data-include="../components/footer.html"></div>
 
   <script src="../components/include.js"></script>
+  <script src="../components/blog-card.js"></script>
   <script>
-    // Simple static loader placeholder; can be replaced by dynamic fetch of posts.json later
-    document.addEventListener('componentsLoaded', () => {
-      const list = document.getElementById('blog-list')
-      if (list) {
-        list.innerHTML = '<p>Coming soon...</p>'
-      }
-    })
+    // No-op: blog-card.js mounts posts into #blog-list
   </script>
 </body>
 

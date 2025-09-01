@@ -4,19 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile:scss": "node-sass sass/main.scss css/style.css -w",
+    "compile:scss": "sass --no-source-map sass/main.scss css/style.css --watch",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.css -o css/style.css",
-    "compress:css": "node-sass css/style.css css/style.css --output-style compressed",
-    "build": "npm-run-all prefix:css compress:css",
-    "dev": "npx --yes http-server -c-1 -p 5173 | cat"
+    "compress:css": "sass --style=compressed css/style.css css/style.css",
+    "build": "sass --no-source-map sass/main.scss css/style.css && npm run prefix:css && npm run compress:css",
+    "dev": "npx --yes http-server -c-1 -p 5173 | cat",
+    "dev:5174": "npx --yes http-server -c-1 -p 5174 | cat",
+    "dev:5175": "npx --yes http-server -c-1 -p 5175 | cat"
   },
   "author": "",
   "license": "GPL-3.0",
   "devDependencies": {
     "autoprefixer": "^10.3.1",
-    "node-sass": "^8.0.0",
-    "npm-run-all": "^4.1.5",
-    "postcss-cli": "^8.3.1"
+    "postcss-cli": "^8.3.1",
+    "sass": "^1.77.6",
+    "npm-run-all": "^4.1.5"
   },
   "dependencies": {
     "firebase": "^10.9.0",

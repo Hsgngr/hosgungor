@@ -153,6 +153,7 @@
       width: 100%;
       display: block;
       object-fit: cover;
+      aspect-ratio: 16 / 9;
     }
     &-content {
       padding: 2rem 0;

@@ -27,7 +27,19 @@ function initializeHeaderInteractions() {
   })
 
   for (let i = 0; i < headerSmallMenuLinks.length; i++) {
-    headerSmallMenuLinks[i].addEventListener('click', () => {
+    headerSmallMenuLinks[i].addEventListener('click', (e) => {
+      const target = e.target.closest('[data-scroll-target]')
+      if (target) {
+        e.preventDefault()
+        const selector = target.getAttribute('data-scroll-target')
+        const el = document.querySelector(selector)
+        if (el) {
+          const y = el.getBoundingClientRect().top + window.scrollY - 110
+          window.scrollTo({ top: y, behavior: 'smooth' })
+        } else {
+          location.href = `/index.html${selector}`
+        }
+      }
       smallMenu.classList.remove('header__sm-menu--active')
       headerHamMenuBtn.classList.remove('d-none')
       headerHamMenuCloseBtn.classList.add('d-none')
@@ -42,4 +54,19 @@ function initializeHeaderInteractions() {
   }
 }
 
-document.addEventListener('componentsLoaded', initializeHeaderInteractions)
+document.addEventListener('componentsLoaded', () => {
+  initializeHeaderInteractions()
+  const blogLinks = document.querySelectorAll('[data-scroll-target="#blog"]')
+  blogLinks.forEach((link) => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault()
+      const el = document.querySelector('#blog')
+      if (el) {
+        const y = el.getBoundingClientRect().top + window.scrollY - 110
+        window.scrollTo({ top: y, behavior: 'smooth' })
+      } else {
+        location.href = '/index.html#blog'
+      }
+    })
+  })
+})
