@@ -34,10 +34,11 @@ function initializeHeaderInteractions() {
         const selector = target.getAttribute('data-scroll-target')
         const el = document.querySelector(selector)
         if (el) {
-          const y = el.getBoundingClientRect().top + window.scrollY - 110
+          const innerHeading = el.querySelector('.heading-sec__main')
+          const anchorEl = innerHeading || el
+          const y = anchorEl.getBoundingClientRect().top + window.scrollY - 110
+          history.pushState(null, '', `${location.pathname}${selector}`)
           window.scrollTo({ top: y, behavior: 'smooth' })
-        } else {
-          location.href = `/index.html${selector}`
         }
       }
       smallMenu.classList.remove('header__sm-menu--active')
@@ -62,10 +63,11 @@ document.addEventListener('componentsLoaded', () => {
       e.preventDefault()
       const el = document.querySelector('#blog')
       if (el) {
-        const y = el.getBoundingClientRect().top + window.scrollY - 110
+        const innerHeading = el.querySelector('.heading-sec__main')
+        const anchorEl = innerHeading || el
+        const y = anchorEl.getBoundingClientRect().top + window.scrollY - 110
+        history.pushState(null, '', `${location.pathname}#blog`)
         window.scrollTo({ top: y, behavior: 'smooth' })
-      } else {
-        location.href = '/index.html#blog'
       }
     })
   })
