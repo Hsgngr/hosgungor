@@ -26,9 +26,9 @@ function renderBlogCard(post) {
 
 async function fetchPostsJson() {
   const attempts = [
-    '/assets/blog/posts.json',
-    './assets/blog/posts.json',
-    '../assets/blog/posts.json'
+    '/blog/posts.json',
+    './blog/posts.json',
+    '../blog/posts.json'
   ]
   for (const url of attempts) {
     try {

@@ -7,7 +7,8 @@
     "compile:scss": "sass --no-source-map sass/main.scss css/style.css --watch",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.css -o css/style.css",
     "compress:css": "sass --style=compressed css/style.css css/style.css",
-    "build": "sass --no-source-map sass/main.scss css/style.css && npm run prefix:css && npm run compress:css",
+    "build:blog": "node scripts/build-blog.js",
+    "build": "npm run build:blog && sass --no-source-map sass/main.scss css/style.css && npm run prefix:css && npm run compress:css",
     "dev": "npx --yes http-server -c-1 -p 5173 | cat",
     "dev:5174": "npx --yes http-server -c-1 -p 5174 | cat",
     "dev:5175": "npx --yes http-server -c-1 -p 5175 | cat"
