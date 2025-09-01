@@ -31,9 +31,10 @@ function toHtml(markdown) {
     .replace(/\*\*(.*?)\*\*/g, '<strong>$1<\/strong>')
     .replace(/\*(.*?)\*/g, '<em>$1<\/em>')
     .replace(/`([^`]+)`/g, '<code>$1<\/code>')
-    .replace(/!\[[^\]]*\]\(([^)]+)\)/g, '<img src="$1" alt="" \/>')
-    .replace(/\n{2,}/g, '</p><p>')
-  html = '<p>' + html + '</p>'
+    .replace(/\n{2,}/g, '<\/p><p>')
+  html = '<p>' + html + '<\/p>'
+  // Convert image syntax after paragraph conversion to keep placement reasonable
+  html = html.replace(/!\[[^\]]*\]\(([^)]+)\)/g, '<img src="$1" alt="" \/>')
   return html
 }
 
@@ -56,17 +57,47 @@ function build() {
     const slug = filename.replace(/\.md$/, '')
     const md = fs.readFileSync(path.join(postsDir, filename), 'utf8')
     const { data, content } = parseFrontMatter(md)
-    const html = toHtml(content)
+
+    // get first image and strip it (used as cover)
+    const imgRegex = /!\[[^\]]*\]\(([^)]+)\)/
+    const imgMatch = content.match(imgRegex)
+    const image = data.cover_image || (imgMatch ? imgMatch[1] : '')
+    const contentClean = imgMatch ? content.replace(imgMatch[0], '') : content
+
+    const html = toHtml(contentClean)
     const title = data.title || slug
     const date = formatDate(data.date || new Date().toISOString())
     const tag = (data.tags && Array.isArray(data.tags) && data.tags[0]) || data.tag || ''
 
-    // try to extract first image
-    const imgMatch = content.match(/!\[[^\]]*\]\(([^)]+)\)/)
-    const image = data.cover_image || (imgMatch ? imgMatch[1] : '')
-
     // write HTML page
-    const page = `<!DOCTYPE html>\n<html lang="tr">\n<head>\n  <meta charset="UTF-8" />\n  <meta name="viewport" content="width=device-width, initial-scale=1.0" />\n  <title>${title}</title>\n  <link rel="icon" type="image/png" href="../assets/png/hosgungor_portfolio_icon7.png" />\n  <link rel="stylesheet" href="../css/style.css" />\n  <link rel="preconnect" href="https://fonts.googleapis.com" />\n  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />\n  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet" />\n</head>\n<body>\n  <div data-include="../components/header.html"></div>\n  <section class="sec-pad">\n    <div class="main-container">\n      <h1 class="heading heading-sec__main">${title}</h1>\n      <div class="markdown-content" style="margin-top:2rem;max-width:70rem;">${html}</div>\n    </div>\n  </section>\n  <div data-include="../components/footer.html"></div>\n  <script src="../components/include.js"></script>\n</body>\n</html>`
+    const page = `<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>${title}</title>
+  <link rel="icon" type="image/png" href="../assets/png/hosgungor_portfolio_icon7.png" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div data-include="../components/header.html"></div>
+  <section class="sec-pad">
+    <div class="main-container">
+      <div class="blog-post">
+        <h1 class="blog-post__title">${title}</h1>
+        ${data.description ? `<p class=\"blog-post__desc\">${data.description}</p>` : ''}
+        ${image ? `<img class=\"blog-post__cover\" src=\"${image}\" alt=\"${title}\"/>` : ''}
+        <div class="markdown-content blog-post__content">${html}</div>
+      </div>
+    </div>
+  </section>
+  <div data-include="../components/footer.html"></div>
+  <script src="../components/include.js"></script>
+</body>
+</html>`
 
     fs.writeFileSync(path.join(outDir, `${slug}.html`), page)
 

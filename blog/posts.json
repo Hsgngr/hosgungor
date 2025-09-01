@@ -1,10 +1,10 @@
 [
   {
-    "slug": "smsbotu_yapay_zekasi",
-    "title": "SMSBOTU'nun Arkasındaki Yapay Zeka Teknolojisi",
-    "date": "2023-10-13",
+    "slug": "example_blog_post",
+    "title": "Example Blog Post",
+    "date": "2025-09-02",
     "tag": "",
-    "excerpt": "SMSBOTU Yapay Zeka Teknolojisinden nasıl yararlanır ve ne gibi farklılıklar sunar?",
+    "excerpt": "An example blog post that helps me test the blog post functionality",
     "image": "https://raw.githubusercontent.com/Hsgngr/smsbotu_content/main/smsbotu_yz/dalle3_smsbotu.png"
   }
 ]
