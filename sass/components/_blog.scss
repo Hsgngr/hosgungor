@@ -7,7 +7,6 @@
   grid-auto-rows: auto;
   @media only screen and (max-width: 56.25em) {
     grid-template-columns: 1fr;
-    min-height: 90rem;
     align-items: start;
   }
 }
@@ -100,6 +99,14 @@
   font-size: 1.8rem;
   line-height: 1.8;
   color: #374151; /* gray-700 */
+}
+
+.blog-back-link {
+  display: inline-block;
+  font-size: 1.6rem;
+  color: #00522C;
+  text-decoration: underline;
+  margin-bottom: 1.2rem;
 }
 
 

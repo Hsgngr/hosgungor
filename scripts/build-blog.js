@@ -86,6 +86,7 @@ function build() {
   <div data-include="../components/header.html"></div>
   <section class="sec-pad">
     <div class="main-container">
+      <a href="/blog/" class="blog-back-link">← Back to blog</a>
       <div class="blog-post">
         <h1 class="blog-post__title">${title}</h1>
         ${data.description ? `<p class=\"blog-post__desc\">${data.description}</p>` : ''}

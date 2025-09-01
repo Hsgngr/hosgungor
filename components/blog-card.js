@@ -1,7 +1,7 @@
 function formatDate(isoString) {
   try {
     const d = new Date(isoString)
-    return d.toLocaleDateString('tr-TR', { day: '2-digit', month: 'long', year: 'numeric' })
+    return d.toLocaleDateString('en-US', { day: '2-digit', month: 'long', year: 'numeric' })
   } catch {
     return isoString
   }
