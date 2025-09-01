@@ -1,4 +1,4 @@
-## Welcome to Ege Hosgungor's Portfolio 💻/⚙️
+## Welcome to Ege Hoşgüngör's Portfolio 💻/⚙️
 [Take a dive into my portfolio](https://hsgngr.github.io/hosgungor/) 🔗 and see how I'm making an impact in the world of AI and robotics. 
 
 ## About the Portfolio
