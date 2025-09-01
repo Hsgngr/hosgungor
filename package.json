@@ -7,7 +7,8 @@
     "compile:scss": "node-sass sass/main.scss css/style.css -w",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.css -o css/style.css",
     "compress:css": "node-sass css/style.css css/style.css --output-style compressed",
-    "build": "npm-run-all prefix:css compress:css"
+    "build": "npm-run-all prefix:css compress:css",
+    "dev": "npx --yes http-server -c-1 -p 5173 | cat"
   },
   "author": "",
   "license": "GPL-3.0",

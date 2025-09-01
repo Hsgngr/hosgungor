@@ -1,0 +1,1 @@
+npm run dev #---> to serve the website locally

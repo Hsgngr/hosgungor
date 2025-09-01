@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Blog - Ege's Portfolio</title>
+  <link rel="icon" type="image/png" href="../assets/png/hosgungor_portfolio_icon7.png" />
+  <meta name="description" content="Blog posts by Ege" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div data-include="../components/header.html"></div>
+
+  <section class="sec-pad">
+    <div class="main-container">
+      <h2 class="heading heading-sec heading-sec__mb-med">
+        <span class="heading-sec__main">Blog</span>
+      </h2>
+      <div id="blog-list"></div>
+    </div>
+  </section>
+
+  <div data-include="../components/footer.html"></div>
+
+  <script src="../components/include.js"></script>
+  <script>
+    // Simple static loader placeholder; can be replaced by dynamic fetch of posts.json later
+    document.addEventListener('componentsLoaded', () => {
+      const list = document.getElementById('blog-list')
+      if (list) {
+        list.innerHTML = '<p>Coming soon...</p>'
+      }
+    })
+  </script>
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Ege's Blog</title>
+  <link rel="icon" type="image/png" href="../assets/png/hosgungor_portfolio_icon7.png" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+  <div id="site-header"></div>
+
+  <section class="project-cs-hero">
+    <div class="project-cs-hero__content">
+      <h1 class="heading-primary" id="blog-page-title">Blog</h1>
+    </div>
+  </section>
+
+  <section class="sec-pad">
+    <div class="main-container" id="blog-content">
+      <div id="post-header"></div>
+      <article class="post" id="post-body"></article>
+      <div id="post-list" class="blog__grid" style="margin-top: 2rem;"></div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+
+  <script src="/components/include.js"></script>
+  <script>
+    document.addEventListener('componentsReady', function() {
+      if (typeof initHeaderInteractions === 'function') {
+        initHeaderInteractions();
+      }
+    });
+  </script>
+  <script src="../index.js"></script>
+  <script src="./blog.js"></script>
+</body>
+
+</html>
+
