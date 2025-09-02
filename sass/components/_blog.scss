@@ -53,6 +53,11 @@
   text-transform: none;
 }
 
+.blog-card__tags {
+  display: inline-flex;
+  gap: .6rem;
+}
+
 .blog-card__title {
   font-size: 2.2rem;
   font-weight: 800;

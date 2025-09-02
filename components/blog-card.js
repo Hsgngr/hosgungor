@@ -9,6 +9,9 @@ function formatDate(isoString) {
 
 function renderBlogCard(post) {
   const link = post.slug ? `/blog/${post.slug}.html` : (post.href || '#')
+  const tagsHtml = Array.isArray(post.tags) && post.tags.length
+    ? `<span class="blog-card__tags">${post.tags.map(t => `<span class=\"blog-card__tag\">${t}</span>`).join('          ')}</span>`
+    : ''
   return `
   <article class="blog-card">
     <a href="${link}" class="blog-card__image-link">
@@ -16,7 +19,7 @@ function renderBlogCard(post) {
     </a>
     <div class="blog-card__meta">
       <span class="blog-card__date">${formatDate(post.date)}</span>
-      <span class="blog-card__tag">${post.tag}</span>
+      ${tagsHtml}
     </div>
     <h3 class="blog-card__title"><a href="${link}">${post.title}</a></h3>
     <p class="blog-card__excerpt">${post.excerpt}</p>

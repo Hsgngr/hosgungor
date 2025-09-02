@@ -3,8 +3,21 @@
     "slug": "example_blog_post",
     "title": "Example Blog Post",
     "date": "2025-09-02",
-    "tag": "",
+    "tags": [
+      "Example"
+    ],
     "excerpt": "An example blog post that helps me test the blog post functionality",
+    "image": "https://raw.githubusercontent.com/Hsgngr/smsbotu_content/main/smsbotu_yz/dalle3_smsbotu.png"
+  },
+  {
+    "slug": "coding_in_the_era_of_AI",
+    "title": "Coding in the Era of AI",
+    "date": "2025-09-02",
+    "tags": [
+      "AI",
+      "Coding"
+    ],
+    "excerpt": "My self-contradicting beliefs about coding in the era of AI",
     "image": "https://raw.githubusercontent.com/Hsgngr/smsbotu_content/main/smsbotu_yz/dalle3_smsbotu.png"
   }
 ]

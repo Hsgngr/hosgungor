@@ -6,19 +6,41 @@ const path = require('path')
 
 function parseFrontMatter(markdown) {
   if (!markdown.startsWith('---')) return { data: {}, content: markdown }
-  const end = markdown.indexOf('\n---', 3)
-  if (end === -1) return { data: {}, content: markdown }
-  const fm = markdown.slice(3, end).trim()
-  const rest = markdown.slice(end + 4).replace(/^\s*\n/, '')
+  let end = markdown.indexOf('\n---', 3)
+  let fm = ''
+  let rest = ''
+  if (end !== -1) {
+    fm = markdown.slice(3, end).trim()
+    rest = markdown.slice(end + 4).replace(/^\s*\n/, '')
+  } else {
+    // No closing '---' found. Treat everything after '---' as front matter.
+    fm = markdown.slice(3).trim()
+    rest = ''
+  }
   const data = {}
-  fm.split(/\r?\n/).forEach((line) => {
+  const lines = fm.split(/\r?\n/)
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i]
     const m = line.match(/^([A-Za-z0-9_\-]+):\s*(.*)$/)
-    if (!m) return
+    if (!m) continue
     const key = m[1]
     let value = m[2]
-    if (value.startsWith('"') && value.endsWith('"')) value = value.slice(1, -1)
-    data[key] = value
-  })
+    if (value === '' && i + 1 < lines.length && /^\s*-\s+/.test(lines[i + 1])) {
+      // YAML array block
+      const arr = []
+      i++
+      while (i < lines.length && /^\s*-\s+/.test(lines[i])) {
+        const item = lines[i].replace(/^\s*-\s+/, '')
+        arr.push(item.replace(/^"|"$/g, ''))
+        i++
+      }
+      i--
+      data[key] = arr
+    } else {
+      if (value.startsWith('"') && value.endsWith('"')) value = value.slice(1, -1)
+      data[key] = value
+    }
+  }
   return { data, content: rest }
 }
 
@@ -47,6 +69,17 @@ function formatDate(iso) {
   }
 }
 
+function generateTitleFromSlug(slug) {
+  return slug
+    .replace(/[\-_]+/g, ' ')
+    .split(' ')
+    .map((w) => {
+      if (w.toUpperCase() === w) return w // preserve acronyms like AI
+      return w.charAt(0).toUpperCase() + w.slice(1).toLowerCase()
+    })
+    .join(' ')
+}
+
 function build() {
   const postsDir = path.join(process.cwd(), 'blog', 'posts')
   const outDir = path.join(process.cwd(), 'blog')
@@ -61,13 +94,13 @@ function build() {
     // get first image and strip it (used as cover)
     const imgRegex = /!\[[^\]]*\]\(([^)]+)\)/
     const imgMatch = content.match(imgRegex)
-    const image = data.cover_image || (imgMatch ? imgMatch[1] : '')
+    const image = data.cover_image || data.coverimage || (imgMatch ? imgMatch[1] : '')
     const contentClean = imgMatch ? content.replace(imgMatch[0], '') : content
 
     const html = toHtml(contentClean)
-    const title = data.title || slug
+    const title = data.title || generateTitleFromSlug(slug)
     const date = formatDate(data.date || new Date().toISOString())
-    const tag = (data.tags && Array.isArray(data.tags) && data.tags[0]) || data.tag || ''
+    const tags = Array.isArray(data.tags) ? data.tags : (data.tag ? [data.tag] : [])
 
     // write HTML page
     const page = `<!DOCTYPE html>
@@ -102,7 +135,17 @@ function build() {
 
     fs.writeFileSync(path.join(outDir, `${slug}.html`), page)
 
-    postsMeta.push({ slug, title, date, tag, excerpt: data.description || '', image })
+    const excerpt = data.description && String(data.description).trim().length > 0
+      ? data.description
+      : contentClean
+          .replace(/---[\s\S]*?---/, '') // strip any accidental front-matter text
+          .replace(/!\[[^\]]*\]\([^\)]*\)/g, '') // strip images
+          .replace(/\[[^\]]*\]\([^\)]*\)/g, '') // strip links
+          .replace(/[#*_`>]/g, '') // strip markdown tokens
+          .replace(/\n+/g, ' ')
+          .trim()
+          .slice(0, 180)
+    postsMeta.push({ slug, title, date, tags, excerpt, image })
   })
 
   // sort by date desc
