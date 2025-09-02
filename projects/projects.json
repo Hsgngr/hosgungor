@@ -29,7 +29,15 @@
     "href": "https://www.youtube.com/watch?v=UaCITyHXu8I",
     "image": "/assets/projects/HapticVr.png",
     "excerpt": "Vibrotactile hand interface enabling users to feel virtual objects; best senior project winner.",
-    "tags": ["Hardware", "VR", "Mechanical Engineering", "Prototyping"]
+    "tags": ["Hardware", "VR","Award Winner"]
+  },
+  {
+    "slug": "split_flap_display",
+    "title": "Split Flap Display (3D Printed)",
+    "href": "https://www.youtube.com/shorts/hm4yOwrRZaM",
+    "image": "/assets/projects/splitflap_ok2.png",
+    "excerpt": "A 3D printed fully functional 8-char split flap display inspired by TV Series Lost",
+    "tags": ["Animatronics", "Hobby", "3D Printing", "ESP32"]
   },
   {
     "slug": "animatronics-briefcase",
@@ -37,7 +45,7 @@
     "href": "#",
     "image": "/assets/projects/briefcase_gig.png",
     "excerpt": "End-to-end animatronics side project: mechanisms, software, and performance.",
-    "tags": ["Animatronics"]
+    "tags": ["Animatronics", "Hobby"]
   },
   {
     "slug": "flirty-pixar-lamp",
