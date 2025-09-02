@@ -10,6 +10,8 @@
     "rewrites": [
       { "source": "/blog", "destination": "/blog/index.html" },
       { "source": "/blog/", "destination": "/blog/index.html" },
+      { "source": "/projects", "destination": "/projects/index.html" },
+      { "source": "/projects/", "destination": "/projects/index.html" },
       { "source": "**", "destination": "/index.html" }
     ]
   }

@@ -1,0 +1,60 @@
+[
+  {
+    "slug": "smsbotu",
+    "title": "SMSBOTU - Internet Access via SMS powered by LLMs",
+    "href": "https://smsbotu.com/",
+    "image": "/assets/projects/1e191.png",
+    "excerpt": "An intelligent agent that brings internet information to your phone via SMS, powered by Langchain and OpenAI.",
+    "tags": ["LLM", "Product", "Data Science"]
+  },
+  {
+    "slug": "thesis-social-distancing-rl",
+    "title": "MSc Thesis: Simulation-Based Reinforcement Learning for Social Distancing",
+    "href": "https://github.com/Hsgngr/Pandemic_Simulation",
+    "image": "/assets/projects/thesis_last.png",
+    "excerpt": "Epidemic simulation with RL; trained agents to learn social distancing and self-quarantine.",
+    "tags": ["Reinforcement Learning", "Data Science"]
+  },
+  {
+    "slug": "datathons-kaggle-wins",
+    "title": "Multiple Datathons / Kaggle Competitions Winner",
+    "href": "https://github.com/Hsgngr/",
+    "image": "/assets/projects/hackathons_2.jpeg",
+    "excerpt": "Highlights across formula AI, AirBnB analysis, census income classification, and more.",
+    "tags": ["Competitions", "Data Science"]
+  },
+  {
+    "slug": "haptic-vr-glove",
+    "title": "Haptic Feedback Glove for Virtual Reality",
+    "href": "https://www.youtube.com/watch?v=UaCITyHXu8I",
+    "image": "/assets/projects/HapticVr.png",
+    "excerpt": "Vibrotactile hand interface enabling users to feel virtual objects; best senior project winner.",
+    "tags": ["Hardware", "VR", "Mechanical Engineering", "Prototyping"]
+  },
+  {
+    "slug": "animatronics-briefcase",
+    "title": "Animatronics Briefcase",
+    "href": "#",
+    "image": "/assets/projects/briefcase_gig.png",
+    "excerpt": "End-to-end animatronics side project: mechanisms, software, and performance.",
+    "tags": ["Animatronics"]
+  },
+  {
+    "slug": "flirty-pixar-lamp",
+    "title": "Flirty Pixar Lamp",
+    "href": "https://www.youtube.com/watch?v=d19e3JlTT-w",
+    "image": "/assets/projects/flirty_lamp_300.png",
+    "excerpt": "Short animation created for the \"Animation and Modelling\" course using Cinema4D.",
+    "tags": ["Animation", "3D Modeling"]
+  },
+  {
+    "slug": "ku-twin",
+    "title": "KU-TWIN (Digital Twin)",
+    "href": "https://karma.ku.edu.tr/en/projects",
+    "image": "/assets/projects/kutwin.png",
+    "excerpt": "Digital twin of Koç University with photogrammetric models and point cloud data in VR.",
+    "tags": ["Digital Twin", "VR","Photogrammetry"]
+  }
+]
+
+

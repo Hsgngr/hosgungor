@@ -21,6 +21,7 @@ function run() {
   const targets = [
     path.join(root, 'index.html'),
     path.join(root, 'blog', 'index.html'),
+    path.join(root, 'projects', 'index.html'),
   ]
   targets.forEach((f) => inlineComponents(f, headerHtml, footerHtml))
 }

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Projects - Ege's Portfolio</title>
+  <link rel="icon" type="image/png" href="../assets/png/hosgungor_portfolio_icon7.png" />
+  <meta name="description" content="Projects by Ege" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Header/footer are inlined by build:inline script -->
+  <header class="header" lang="en">
+  <div class="header__content">
+    <div class="header__logo-container">
+      <div class="header__logo-img-cont">
+        <img src="/assets/png/ege_gen.jpeg" alt="Ege Hoşgüngör Linkedin Image" class="header__logo-img" />
+      </div>
+      <span class="header__logo-sub">Ege Hoşgüngör</span>
+    </div>
+    <div class="header__main">
+      <ul class="header__links">
+        <li class="header__link-wrapper">
+          <a href="/index.html" class="header__link"> Home </a>
+        </li>
+        <li class="header__link-wrapper">
+          <a href="/index.html#experience" class="header__link">Experience </a>
+        </li>
+        <li class="header__link-wrapper">
+          <a href="/index.html#projects" class="header__link">
+            Projects
+          </a>
+        </li>
+        <li class="header__link-wrapper">
+          <a href="/#blog" class="header__link" data-scroll-target="#blog"> Blog </a>
+        </li>
+        <li class="header__link-wrapper">
+          <a href="/index.html#contact" class="header__link"> Contact </a>
+        </li>
+      </ul>
+      <div class="header__main-ham-menu-cont">
+        <img src="/assets/svg/ham-menu.svg" alt="hamburger menu" class="header__main-ham-menu" />
+        <img src="/assets/svg/ham-menu-close.svg" alt="hamburger menu close"
+          class="header__main-ham-menu-close d-none" />
+      </div>
+    </div>
+  </div>
+  <div class="header__sm-menu">
+    <div class="header__sm-menu-content">
+      <ul class="header__sm-menu-links">
+        <li class="header__sm-menu-link">
+          <a href="/index.html"> Home </a>
+        </li>
+        <li class="header__sm-menu-link">
+          <a href="/index.html#experience"> Experience </a>
+        </li>
+        <li class="header__sm-menu-link">
+          <a href="/index.html#projects"> Projects </a>
+        </li>
+        <li class="header__sm-menu-link">
+            <a href="/#blog" data-scroll-target="#blog"> Blog </a>
+          </li>
+        <li class="header__sm-menu-link">
+          <a href="/index.html#contact"> Contact </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+  <section class="sec-pad">
+    <div class="main-container">
+      <h2 class="heading heading-sec heading-sec__mb-med">
+        <span class="heading-sec__main">Projects</span>
+      </h2>
+      <div id="projects-list" class="blog-cards"></div>
+    </div>
+  </section>
+
+  <footer class="main-footer" lang="en">
+  <div class="main-container">
+    <div class="main-footer__upper">
+      <div class="main-footer__row main-footer__row-1">
+        <h2 class="heading heading-sm main-footer__heading-sm">
+          <span>Social</span>
+        </h2>
+        <div class="main-footer__social-cont">
+          <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/hosgungor/">
+            <img class="main-footer__icon" src="/assets/png/linkedin-ico.png" alt="icon" />
+          </a>
+          <a target="_blank" rel="noreferrer" href="https://github.com/Hsgngr">
+            <img class="main-footer__icon" src="/assets/png/github-ico.png" alt="icon" />
+          </a>
+          <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=UaCITyHXu8I">
+            <img class="main-footer__icon" src="/assets/png/yt-ico.png" alt="icon" />
+          </a>
+        </div>
+      </div>
+      <div class="main-footer__row main-footer__row-2">
+        <h4 class="heading heading-sm text-lt">Ege Hoşgüngör</h4>
+        <p class="main-footer__short-desc">
+        </p>
+      </div>
+    </div>
+    <div class="main-footer__lower">
+      &copy; Copyright 2025
+    </div>
+  </div>
+</footer>
+
+  <script>
+    async function fetchProjects() {
+      const res = await fetch('../projects/projects.json', { cache: 'no-cache' })
+      return res.ok ? res.json() : []
+    }
+    function renderCard(p) {
+      const link = p.href && p.href !== '#' ? p.href : `/projects/${p.slug}.html`
+      const tags = Array.isArray(p.tags) ? p.tags : []
+      const tagsHtml = tags.length ? `<span class="blog-card__tags">${tags.map(t => `<span class=\"blog-card__tag\">${t}</span>`).join('')}</span>` : ''
+      return `
+      <article class="blog-card">
+        <a href="${link}" class="blog-card__image-link" ${p.href && p.href !== '#' ? 'target="_blank" rel="noreferrer"' : ''}>
+          <img src="${p.image}" alt="${p.title}" class="blog-card__image" loading="lazy" />
+        </a>
+        <div class="blog-card__meta">${tagsHtml}</div>
+        <h3 class="blog-card__title"><a href="${link}" ${p.href && p.href !== '#' ? 'target="_blank" rel="noreferrer"' : ''}>${p.title}</a></h3>
+        <p class="blog-card__excerpt">${p.excerpt || ''}</p>
+      </article>`
+    }
+    async function mount() {
+      const container = document.getElementById('projects-list')
+      const projects = await fetchProjects()
+      container.innerHTML = (projects || []).map(renderCard).join('')
+    }
+    mount()
+  </script>
+</body>
+
+</html>
+
+
