@@ -11,7 +11,66 @@
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <div data-include="../components/header.html"></div>
+  <header class="header" lang="en">
+  <div class="header__content">
+    <div class="header__logo-container">
+      <div class="header__logo-img-cont">
+        <img src="/assets/png/ege_gen.jpeg" alt="Ege Hoşgüngör Linkedin Image" class="header__logo-img" />
+      </div>
+      <span class="header__logo-sub">Ege Hoşgüngör</span>
+    </div>
+    <div class="header__main">
+      <ul class="header__links">
+        <li class="header__link-wrapper">
+          <a href="/index.html" class="header__link"> Home </a>
+        </li>
+        <li class="header__link-wrapper">
+          <a href="/index.html#experience" class="header__link">Experience </a>
+        </li>
+        <li class="header__link-wrapper">
+          <a href="/index.html#projects" class="header__link">
+            Projects
+          </a>
+        </li>
+        <li class="header__link-wrapper">
+          <a href="/#blog" class="header__link" data-scroll-target="#blog"> Blog </a>
+        </li>
+        <li class="header__link-wrapper">
+          <a href="/index.html#contact" class="header__link"> Contact </a>
+        </li>
+      </ul>
+      <div class="header__main-ham-menu-cont">
+        <img src="/assets/svg/ham-menu.svg" alt="hamburger menu" class="header__main-ham-menu" />
+        <img src="/assets/svg/ham-menu-close.svg" alt="hamburger menu close"
+          class="header__main-ham-menu-close d-none" />
+      </div>
+    </div>
+  </div>
+  <div class="header__sm-menu">
+    <div class="header__sm-menu-content">
+      <ul class="header__sm-menu-links">
+        <li class="header__sm-menu-link">
+          <a href="/index.html"> Home </a>
+        </li>
+        <li class="header__sm-menu-link">
+          <a href="/index.html#experience"> Experience </a>
+        </li>
+        <li class="header__sm-menu-link">
+          <a href="/index.html#projects"> Projects </a>
+        </li>
+        <li class="header__sm-menu-link">
+            <a href="/#blog" data-scroll-target="#blog"> Blog </a>
+          </li>
+        <li class="header__sm-menu-link">
+          <a href="/index.html#contact"> Contact </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+
+
   <section class="sec-pad">
     <div class="main-container">
       <a href="/blog/" class="blog-back-link">← Back to blog</a>
@@ -19,11 +78,42 @@
         <h1 class="blog-post__title">Coding in the Era of AI</h1>
         <p class="blog-post__desc">My self-contradicting beliefs about coding in the era of AI</p>
         <img class="blog-post__cover" src="https://raw.githubusercontent.com/Hsgngr/smsbotu_content/main/smsbotu_yz/dalle3_smsbotu.png" alt="Coding in the Era of AI"/>
-        <div class="markdown-content blog-post__content"><p></p></div>
+        <div class="markdown-content blog-post__content"><p><h2>COMING SOON</h2></p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p><h2>Lorem Ipsum</h2></p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p><br></p></div>
       </div>
     </div>
   </section>
-  <div data-include="../components/footer.html"></div>
-  <script src="../components/include.js"></script>
+  <footer class="main-footer" lang="en">
+  <div class="main-container">
+    <div class="main-footer__upper">
+      <div class="main-footer__row main-footer__row-1">
+        <h2 class="heading heading-sm main-footer__heading-sm">
+          <span>Social</span>
+        </h2>
+        <div class="main-footer__social-cont">
+          <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/hosgungor/">
+            <img class="main-footer__icon" src="/assets/png/linkedin-ico.png" alt="icon" />
+          </a>
+          <a target="_blank" rel="noreferrer" href="https://github.com/Hsgngr">
+            <img class="main-footer__icon" src="/assets/png/github-ico.png" alt="icon" />
+          </a>
+          <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=UaCITyHXu8I">
+            <img class="main-footer__icon" src="/assets/png/yt-ico.png" alt="icon" />
+          </a>
+        </div>
+      </div>
+      <div class="main-footer__row main-footer__row-2">
+        <h4 class="heading heading-sm text-lt">Ege Hoşgüngör</h4>
+        <p class="main-footer__short-desc">
+        </p>
+      </div>
+    </div>
+    <div class="main-footer__lower">
+      &copy; Copyright 2025
+    </div>
+  </div>
+</footer>
+
+
+
 </body>
 </html>

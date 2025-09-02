@@ -83,6 +83,8 @@ function generateTitleFromSlug(slug) {
 function build() {
   const postsDir = path.join(process.cwd(), 'blog', 'posts')
   const outDir = path.join(process.cwd(), 'blog')
+  const headerHtml = fs.readFileSync(path.join(process.cwd(), 'components', 'header.html'), 'utf8')
+  const footerHtml = fs.readFileSync(path.join(process.cwd(), 'components', 'footer.html'), 'utf8')
   const files = fs.readdirSync(postsDir).filter(f => f.endsWith('.md'))
   const postsMeta = []
 
@@ -102,7 +104,7 @@ function build() {
     const date = formatDate(data.date || new Date().toISOString())
     const tags = Array.isArray(data.tags) ? data.tags : (data.tag ? [data.tag] : [])
 
-    // write HTML page
+    // write HTML page with static header/footer to avoid include flicker
     const page = `<!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -116,7 +118,7 @@ function build() {
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <div data-include="../components/header.html"></div>
+  ${headerHtml}
   <section class="sec-pad">
     <div class="main-container">
       <a href="/blog/" class="blog-back-link">← Back to blog</a>
@@ -128,8 +130,7 @@ function build() {
       </div>
     </div>
   </section>
-  <div data-include="../components/footer.html"></div>
-  <script src="../components/include.js"></script>
+  ${footerHtml}
 </body>
 </html>`
 
