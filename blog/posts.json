@@ -1,13 +1,24 @@
 [
   {
-    "slug": "coding_in_the_era_of_AI",
-    "title": "Coding in the Era of AI",
-    "date": "2025-09-02",
+    "title": "Top 5 Books That Made Me Question My Career in 2024",
+    "date": "2024-12-30",
     "tags": [
-      "AI",
-      "Coding"
+      "Books",
+      "Career"
     ],
-    "excerpt": "My self-contradicting beliefs about coding in the era of AI",
-    "image": "https://raw.githubusercontent.com/Hsgngr/smsbotu_content/main/smsbotu_yz/dalle3_smsbotu.png"
+    "excerpt": "Reflections on five books that shaped how I think about tech, careers, and the future of work.",
+    "image": "/assets/blog_posts/coming_wave.jpg",
+    "href": "https://medium.com/@hosgungor/top-5-books-that-made-me-question-my-career-in-2024-8c1baf20f16e"
+  },
+  {
+    "title": "How to Handle Imbalance Data and Small Training Sets in ML",
+    "date": "2020-10-28",
+    "tags": [
+      "Data Science",
+      "ML"
+    ],
+    "excerpt": "An old, widely-read blog post published on Towards Data Science, frequently referenced in research papers.",
+    "image": "/assets/blog_posts/handling_imbalanced_data.jpg",
+    "href": "https://medium.com/data-science/how-to-handle-imbalance-data-and-small-training-sets-in-ml-989f8053531d"
   }
 ]
