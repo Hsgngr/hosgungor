@@ -1,0 +1,15 @@
+HOSGUNGOR INDUSTRIES — selected identity concept
+Selected by Ege Hosgungor on 20 October 2026.
+
+Approved direction: the ORIGINAL H with the wide diagonal gap.
+Keep the bold H silhouette, chamfered corners and original gap proportions.
+Do not add a notch or an E in the negative space: those explorations were rejected.
+Optional wordmark: HOSGUNGOR INDUSTRIES.
+
+original-h-concept.png preserves the original generated presentation sheet,
+including the black mark, reversed examples and a PCB silkscreen mockup.
+Generated using the built-in image generation tool.
+
+This is a raster concept reference, not a fabrication-ready vector or PCB footprint.
+The heading 'THE JOINT H' is an exploratory name, not required branding.
+No website branding or favicon is replaced by saving this asset.
