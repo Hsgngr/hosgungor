@@ -7,6 +7,13 @@
       "**/node_modules/**"
     ],
     "cleanUrls": true,
+    "redirects": [
+      {
+        "source": "/assets/CV/Ege_Hosgungor_CV_2025July.pdf",
+        "destination": "/assets/CV/Ege_Hosgungor_CV_2026.pdf",
+        "type": 301
+      }
+    ],
     "rewrites": [
       { "source": "/blog", "destination": "/blog/index.html" },
       { "source": "/blog/", "destination": "/blog/index.html" },
